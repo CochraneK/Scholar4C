@@ -1,0 +1,33 @@
+﻿id,year,doi,type,oa_status,jr,short,cn,notes
+J1,2019,10.3758/s13428-018-1177-6,journal,OA,BRM,TheMacroscope,大规模文本语料语义分析平台Macroscope,
+J2,2020,10.1016/j.cognition.2020.104344,journal,OA,Cog,BriefHistoryOfRisk,风险简史,
+J3,2020,10.1037/xlm0000841,journal,nonOA,JEPLMC,EmotionalRecallTask,情绪回忆任务,APA付费;MPI PuRe有post-print
+J4,2021,10.1016/j.socscimed.2021.114222,journal,OA,SSM,ChangingEmotionsPandemic,疫情中的情绪变化,
+J5,2021,10.1016/j.cognition.2021.104813,journal,nonOA,Cog,OutgroupPrejudiceLanguage,群体偏见的语言模式,Sci-Hub路线;PuRe有post-print
+J6,2021,10.3390/bdcc5040077,journal,OA,MDPI,DASentimental,DASentimental方言语料库,MDPI OA
+J7,2022,10.3758/s13421-022-01331-0,journal,OA,MemCog,DiachronicSemanticChange,语义的历时变化,BMC OA
+J8,2022,10.1037/amp0000885,journal,nonOA,AmPsych,RiskPerceptionPrevention,风险感知是否驱动预防行为,APA付费
+J9,2022,10.3389/fpsyg.2022.917630,journal,OA,FrontPsych,SuicideNotesCognitiveNetworks,认知网络检测自杀遗书的结构模式,Frontiers OA
+J10,2024,10.1073/pnas.2220898120,journal,OA,PNAS,CognitiveSelectionLanguageChange,认知选择如何影响语言变化,
+J11,2024,10.1038/s41598-023-50229-7,journal,OA,SciRep,HumanNoveltyVsChatGPT,人类比ChatGPT创造更多新词,李赢第5作者
+J12,2025,10.1002/pchj.70051,journal,unknown,PCHJ,MinorityOpinionsCohesion,增强少数意见的凝聚力与影响力,Wiley待验证
+J13,2026,10.1073/pnas.2504632123,journal,OA,PNAS,PrivateSolutionTrap,集体行动中的私人解决方案陷阱,
+J14,2023,10.2147/prbm.s434765,journal,EXCLUDE,PRBM,ImpactEasingRestrictions,放开疫情管控的影响,已排除:末作者Ying Li属苏州城市学院(yingli.szcityu@gmail.com)非目标李赢;EPMC匹配系第4作者Chong Chen挂心理所
+J15,2025,10.3390/bdcc9070171,journal,OA,BDCC,SuicideNotesAnxietyJournal,自杀遗书焦虑维度期刊版,P9的期刊版;MDPI OA;csauthors补漏
+J16,2026,,journal,INPRESS,PsychRev,OlderYetFasterJournal,年长却更快语义处理期刊版,Psychological Review in press(2026);与P10(yzufb)同文;无DOI;待正式发表后补PDF
+P1,2018,10.31234/osf.io/8vqhm,preprint,OA,OSF,BriefHistoryOfRiskPreprint,风险简史预印本,后发表于Cognition 2020
+P2,2020,10.31219/osf.io/r6tvh,preprint,OA,OSF,EmotionalRecallTaskPreprint,情绪回忆任务预印本,后发表于JEP LMC 2020
+P3,2020,10.31219/osf.io/9dfep,preprint,OA,OSF,ChangingEmotionsPreprint,疫情情绪变化预印本,后发表于SSM 2021
+P4,2020,10.31219/osf.io/zxhde,preprint,OA,OSF,OutgroupPrejudicePreprint,群体偏见语言预印本,后发表于Cognition 2021
+P5,2020,10.31219/osf.io/x7ft3,preprint,OA,OSF,DiachronicChangePreprint,语义历时变化预印本,后发表于Mem Cognit 2022
+P6,2021,10.31234/osf.io/8gvr2,preprint,OA,PsyArXiv,SuicideNotesDistressPreprint,认知网络识别自杀遗书痛苦维度预印本,
+P7,2021,10.31234/osf.io/frvta,preprint,OA,OSF,CogNetScienceFrameworkPreprint,认知网络科学框架预印本,
+P8,2022,10.31219/osf.io/tgeqm,preprint,OA,OSF,StruggleForLifeAmongWordsPreprint,词语间的生存斗争预印本,后发表于PNAS 2024
+P9,2023,10.31234/osf.io/m2k67,preprint,OA,PsyArXiv,AnxietyTextAnalysisPreprint,认知网络与文本分析识别焦虑预印本,OSF文件已被作者删除(410);内容已由J15期刊版覆盖
+P10,2025,10.31234/osf.io/yzufb_v1,preprint,OA,OSF,OlderYetFasterPreprint,年长却更快预印本,
+P11,2024,10.21203/rs.3.rs-4924647/v1,preprint,OA,RS,PrivateSolutionsAssessPreprint,集体行动私人解决方案评估预印本,后发表于PNAS 2026
+C1,2018,,conference,OA,CogSci,SearchYourFeelings2,检索你的感受2.0,CogSci 2018 Masitah LiY Hills TT;PDF:escholarship.org/content/qt67k8k2jr/qt67k8k2jr.pdf
+C2,2017,,conference,OA,CogSci,SearchYourFeelingsLuke,检索你的感受Luke版,CogSci 2017 Masitah LiY Hills TT;escholarship.org;已下载
+C3,2017,,conference,OA,CogSci,PerceptionOfOthers,他人感知移民群体的报纸表征,CogSci 2017 LiY Hills TT;已下载
+C4,2016,,conference,OA,CogSci,HistoricalSemanticsOfRisk,风险的历史语义,CogSci 2016 LiY Hills TT;已下载
+T1,2019,,thesis,OA,Warwick,FromWordsToMindThesis,从言语到心智博士论文,华威大学博士论文;导师Thomas Hills;Leverhulme Trust资助;WRAP 152056;已下载
