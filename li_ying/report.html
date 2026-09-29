@@ -103,6 +103,118 @@ box-shadow:0 1px 3px rgba(0,0,0,.05);scroll-margin-top:70px;transition:box-shado
 .pc-same:hover{background:var(--accent);color:#fff}
 .pid-link{text-decoration:none;color:inherit}
 .pid-link:hover b{color:var(--accent);text-decoration:underline}
+/* ---- 时间线可视化 ---- */
+.tl-core{background:linear-gradient(135deg,#eef2ff,#f8fafc);border:1px solid #c7d2fe;border-left:4px solid #8b5cf6;border-radius:10px;padding:14px 18px;margin:0 0 20px;font-size:.9rem;line-height:1.8;color:#1e293b}
+.tl-phase{background:#fff;border:1px solid var(--border);border-radius:12px;margin-bottom:18px;overflow:hidden;box-shadow:0 1px 3px rgba(30,58,95,.06)}
+.tl-phead{display:flex;align-items:center;gap:12px;padding:12px 18px;flex-wrap:wrap}
+.tl-pbadge{color:#fff;font-weight:800;font-size:.8rem;padding:3px 12px;border-radius:12px}
+.tl-pname{font-size:1.05rem;font-weight:800;color:#1a2332}
+.tl-pwhen{margin-left:auto;font-size:.85rem;font-weight:700;color:#475569;background:#fff;border:1px solid var(--border);padding:2px 12px;border-radius:12px}
+.tl-pmeta{display:flex;gap:8px;flex-wrap:wrap;padding:0 18px 10px}
+.tl-chip{font-size:.75rem;font-weight:600;color:#475569;background:#f1f5f9;border:1px solid var(--border);padding:2px 10px;border-radius:10px}
+.tl-pbody{padding:0 18px 16px}
+.tl-flow-wrap{margin-top:26px}
+.tl-banner{background:#0f172a;color:#e2e8f0;border-radius:10px;padding:12px 18px;font-size:.88rem;font-weight:600;margin-bottom:14px}
+.tl-step{background:#f8fafc;border:1px solid var(--border);border-radius:10px;padding:14px 18px}
+.tl-when{font-size:.78rem;font-weight:800;color:#64748b;letter-spacing:.5px}
+.tl-who{font-size:1rem;font-weight:800;color:#1a2332;margin:2px 0}
+.tl-what{font-size:.85rem;color:#475569;line-height:1.7}
+.tl-arrow{text-align:center;color:#94a3b8;font-size:.75rem;padding:4px 0 2px}
+.tl-arrow:after{content:"↓";display:block;font-size:1.05rem;color:#cbd5e1;line-height:1.2}
+.tl-oneliner{background:linear-gradient(135deg,#fffbeb,#fef3c7);border:1px solid #fde68a;border-radius:10px;padding:14px 18px;margin:16px 0;font-size:.92rem;font-weight:600;color:#92400e;line-height:1.8}
+.tl-ev{background:#f8fafc;border:1px dashed var(--border);border-radius:10px;padding:14px 18px;margin-top:16px}
+.tl-ev-t{font-weight:800;font-size:.9rem;color:#334155;margin-bottom:8px}
+.tl-ev .md li{font-size:.84rem}
+/* ---- 人格画像 ---- */
+.pv-ev-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin:12px 0 22px}
+.pv-ev{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,58,95,.05)}
+.pv-ev-name{font-weight:800;font-size:.95rem;color:#1a2332;margin-bottom:8px}
+.pv-quote{font-size:.8rem;color:#475569;font-style:italic;border-left:3px solid #e2e8f0;padding:4px 10px;margin:6px 0;line-height:1.6;background:#fafbfc;border-radius:0 6px 6px 0}
+.pv-ev-fact{font-size:.78rem;color:#1e40af;background:#eff6ff;border-radius:6px;padding:6px 10px;margin-top:8px;line-height:1.6}
+.pv-inf{display:flex;gap:12px;background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px 16px;margin-bottom:10px}
+.pv-inf-num{flex:none;width:26px;height:26px;border-radius:50%;color:#fff;font-weight:800;font-size:.85rem;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.pv-inf-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.pv-inf-head b{font-size:.95rem;color:#1a2332}
+.pv-pill{font-size:.72rem;font-weight:700;border:1px solid;padding:1px 10px;border-radius:10px}
+.pv-inf-body{font-size:.85rem;color:#475569;line-height:1.75;margin-top:4px}
+.pv-table{margin:12px 0 20px;background:#fff;border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.pv-table th{background:#f1f5f9;font-size:.8rem;color:#475569;padding:9px 14px;text-align:left;border-bottom:2px solid var(--border)}
+.pv-table td{font-size:.85rem;color:#263243;padding:10px 14px;border-bottom:1px solid #eef2f7;line-height:1.6}
+.pv-table tr:last-child td{border-bottom:none}
+.pv-cons{font-size:.72rem;font-weight:800;padding:2px 10px;border-radius:10px;white-space:nowrap}
+.pv-cons.hi{color:#065f46;background:#d1fae5}
+.pv-cons.lo{color:#64748b;background:#f1f5f9}
+.pv-warn{background:#fffbeb;border:1px solid #fde68a;border-left:4px solid #f59e0b;border-radius:10px;padding:12px 16px;margin:14px 0 20px}
+.pv-warn.red{background:#fef2f2;border-color:#fecaca;border-left-color:#e11d48}
+.pv-warn-t{font-weight:800;font-size:.88rem;color:#92400e;margin-bottom:6px}
+.pv-warn.red .pv-warn-t{color:#9f1239}
+.pv-warn li{font-size:.82rem;color:#7c2d12;line-height:1.7;margin:4px 0 4px 18px}
+.pv-warn.red li{color:#881337}
+.pv-hero{background:linear-gradient(135deg,#eef2ff,#fdf2f8);border:1px solid #c7d2fe;border-radius:14px;padding:22px 26px;margin:12px 0;font-size:1.02rem;font-weight:600;color:#1e293b;line-height:1.9;box-shadow:0 2px 8px rgba(99,102,241,.1)}
+/* ---- 论文清单 chips/药丸 ---- */
+.paper-chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+.chip{font-size:.78rem;font-weight:700;color:#334155;background:#fff;border:1px solid var(--border);border-radius:14px;padding:3px 12px}
+.chip.excl-chip{color:#b91c1c;background:#fef2f2;border-color:#fecaca}
+.type-pill{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 10px;border-radius:10px;border:1px solid}
+.node .n-ic{font-size:1.25rem;line-height:1;margin-bottom:4px}
+/* ---- 履历卡片 ---- */
+.pf-note{font-size:.78rem;color:#64748b;background:#f8fafc;border:1px dashed var(--border);border-radius:8px;padding:8px 14px;margin:6px 0 14px;line-height:1.7}
+.pf-kv-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px;margin:12px 0 22px}
+.pf-kv{background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px 14px;box-shadow:0 1px 2px rgba(30,58,95,.04)}
+.pf-k{font-size:.72rem;font-weight:800;color:#8b5cf6;letter-spacing:.5px;margin-bottom:4px}
+.pf-v{font-size:.86rem;color:#1a2332;line-height:1.6}
+.pf-srcs{margin-top:6px;display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+.pf-src{font-size:.68rem;font-weight:700;border:1px solid;padding:0 8px;border-radius:8px;background:#fff}
+.pf-src-note{font-size:.72rem;color:#94a3b8}
+.pf-edu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:12px 0}
+.pf-edu{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,58,95,.05)}
+.pf-edu-cap{font-size:1.3rem;margin-bottom:6px}
+.pf-edu-inst{font-weight:800;font-size:.95rem;color:#1a2332}
+.pf-edu-deg{font-size:.8rem;color:#475569;margin:3px 0}
+.pf-edu-when{font-size:.74rem;font-weight:700;color:#94a3b8}
+.pf-thesis{background:linear-gradient(160deg,#fff 55%,#f5f3ff);border:1px solid #ddd6fe;border-radius:12px;padding:16px 18px;margin:12px 0 22px}
+.pf-thesis-t{font-weight:800;font-size:.95rem;color:#5b21b6;margin-bottom:8px}
+.pf-thesis .md li{font-size:.85rem}
+.pf-thesis .md p{font-size:.85rem}
+.pf-wt-wrap{position:relative;margin:12px 0 22px;padding-left:20px;border-left:3px solid var(--border)}
+.pf-wt{position:relative;background:#fff;border:1px solid var(--border);border-radius:10px;padding:12px 16px;margin-bottom:10px;display:flex;gap:14px;align-items:baseline;flex-wrap:wrap}
+.pf-wt-dot{position:absolute;left:-27px;top:16px;width:11px;height:11px;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 1px var(--border)}
+.pf-wt-main{flex:1;min-width:200px}
+.pf-wt-pos{font-weight:800;font-size:.92rem;color:#1a2332}
+.pf-wt-org{font-weight:600;font-size:.82rem;color:#475569;margin-left:8px}
+.pf-wt-note{font-size:.78rem;color:#64748b;margin-top:3px;line-height:1.6}
+.pf-wt-when{font-size:.76rem;font-weight:700;color:#94a3b8;white-space:nowrap}
+.pf-lin-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px;margin:12px 0}
+.pf-lin{display:flex;gap:12px;background:#fff;border:1px solid var(--border);border-radius:10px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,58,95,.05)}
+.pf-lin-num{flex:none;width:26px;height:26px;border-radius:50%;color:#fff;font-weight:800;font-size:.85rem;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.pf-lin-name{font-weight:700;font-size:.92rem;color:#1a2332;margin-bottom:4px}
+.pf-lin-sub{margin:6px 0 0 18px}
+.pf-lin-sub li{font-size:.8rem;color:#475569;line-height:1.7;margin:3px 0}
+.pf-dir-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:12px 0}
+.pf-dir{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,58,95,.05)}
+.pf-dir-name{font-weight:800;font-size:.98rem;color:#1a2332}
+.pf-dir-desc{font-size:.8rem;color:#475569;margin-top:5px;line-height:1.65}
+.pf-tool{font-size:.82rem;font-weight:600;color:#0d9488;background:#f0fdfa;border:1px dashed #99f6e4;border-radius:8px;padding:8px 14px;margin:10px 0 18px}
+.pf-pj-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:12px 0}
+.pf-pj{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,58,95,.05)}
+.pf-pj-name{font-weight:700;font-size:.88rem;color:#1a2332;line-height:1.5}
+.pf-pj-amt{font-size:1.25rem;font-weight:800;color:#2563eb;margin:6px 0 2px}
+.pf-pj-period{font-size:.76rem;font-weight:700;color:#94a3b8}
+.pf-pj-total{background:linear-gradient(135deg,#eff6ff,#f8fafc);border:1px solid #bfdbfe;border-radius:10px;padding:12px 16px;margin:0 0 22px;font-size:.86rem;color:#1e40af;font-weight:600;line-height:1.7}
+.pf-b7-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px;margin:12px 0 22px}
+.pf-student{background:#fff;border:1px solid var(--border);border-radius:12px;padding:14px 16px;box-shadow:0 1px 3px rgba(30,58,95,.05)}
+.pf-student-d{font-size:.82rem;color:#475569;margin-top:6px;line-height:1.7}
+.pv-recruit{background:#f0f9ff;border:1px dashed #93c5fd;border-radius:12px;padding:14px 16px;color:#1e40af}
+.pv-recruit b{font-size:.92rem}
+.pv-recruit-d{font-size:.82rem;color:#1e40af;margin-top:6px;line-height:1.7}
+.pf-works{background:#fffbeb;border:1px solid #fde68a;border-radius:12px;padding:14px 18px;margin:12px 0}
+.pf-works-t{font-weight:800;font-size:.9rem;color:#92400e;margin-bottom:8px}
+.pf-works .md li{font-size:.84rem}
+.pf-src-box{background:#f8fafc;border:1px solid var(--border);border-radius:12px;padding:14px 18px;margin:12px 0}
+.pf-src-row{display:flex;gap:10px;align-items:baseline;padding:6px 0;border-bottom:1px dashed #eef2f7;font-size:.82rem;flex-wrap:wrap}
+.pf-src-row:last-child{border-bottom:none}
+.pf-src-nm{font-weight:700;color:#334155;min-width:180px}
+.pf-src-url{color:var(--accent);word-break:break-all}
 </style></head><body>
 <div class="header"><h1>李赢（Ying Li）研究整合报告</h1>
 <p>中科院心理研究所副研究员 · 计量分析 × 研究时间线 × 论文清单 × 通俗读论文 × 人格画像 × 履历谱系</p>
@@ -176,12 +288,9 @@ box-shadow:0 1px 3px rgba(0,0,0,.05);scroll-margin-top:70px;transition:box-shado
 </div>
 
 <div id="timeline"><div class="section"><h2>🧭 研究方向演变时间线（2016–2026）</h2>
-<div class="md"><h2 class='mdt'>李赢研究方向演变时间线（2016–2026）</h2>
-<p>生成: 2026-09-29 | 证据基础：本地 29 篇 PDF + 博士论文全文抽取（pypdf，112 页）+ 官网/MPHD/ORCID</p>
-<blockquote>核心判断：不是多次"转方向"，而是<b>单一方法论（大规模量化文本分析）的应用对象逐级迁移</b>——个体情绪 → 社会态度 → 风险与文化 → 疫情/临床 → 语言演化主线化。四个官方主题（语言演化/语言与认知/情绪与福祉/行为决策）正是这条线的收敛结果。</blockquote>
-<hr>
-<h3>阶段 1：博士（2016.01–2019.03，华威大学，导师 Thomas Hills）</h3>
-<p><b>范式确立期</b>："语言是研究心理学的沃土"——用大型语料库复活量化文本分析（thesis 摘要原话：text analysis "should revive in light of the availability of many unprecedentedly large corpora"）。</p>
+
+<div class="tl-core">💡 核心判断：不是多次"转方向"，而是<b>单一方法论（大规模量化文本分析）的应用对象逐级迁移</b>——个体情绪 → 社会态度 → 风险与文化 → 疫情/临床 → 语言演化主线化。四个官方主题（语言演化/语言与认知/情绪与福祉/行为决策）正是这条线的收敛结果。</div>
+<div class="tl-phase" style="border-top:4px solid #8b5cf6"><div class="tl-phead" style="background:#8b5cf612"><span class="tl-pbadge" style="background:#8b5cf6">阶段 1</span><span class="tl-pname">博士</span><span class="tl-pwhen">2016.01–2019.03</span></div><div class="tl-pmeta"><span class="tl-chip">华威大学</span><span class="tl-chip">导师 Thomas Hills</span></div><div class="tl-pbody md"><p><b>范式确立期</b>："语言是研究心理学的沃土"——用大型语料库复活量化文本分析（thesis 摘要原话：text analysis "should revive in light of the availability of many unprecedentedly large corpora"）。</p>
 <p><b>一个平台 + 三个层级</b>（博士论文 5 章结构，每章一篇产出）：</p>
 <table><thead><tr><th>层级</th><th>内容</th><th>论文对应</th><th>发表</th></tr></thead><tbody>
 <tr><td>平台</td><td>Macroscope：历史语言结构分析工具（共时/历时 × 语义/语境 2×2；语义漂移 broadcast/cell/car/happy 1850–2000）</td><td>Li, Engelthaler, Siew &amp; Hills</td><td><b>J1</b> BRM 2019（读博期间已发表）</td></tr>
@@ -191,9 +300,8 @@ box-shadow:0 1px 3px rgba(0,0,0,.05);scroll-margin-top:70px;transition:box-shado
 </tbody></table>
 <p><b>关键证据</b>（thesis 致谢页原文）：</p>
 <ul><li>"My primary advisor, <b>Thomas Hills</b>..."</li><li>"I would like to acknowledge my gratitude to <b>Ralph Hertwig, certainly an unofficial advisor during my PhD and official advisor in the next 3 years</b>" → Hertwig 在博士期间已是非正式指导，博后三年转正式。</li><li>合作者圈：Engelthaler、Siew（Macroscope 共建）；Masitah（ERT 共同一作）。</li><li>资助：Leverhulme Trust。</li></ul>
-<p><b>博士阶段方向画像</b>：文本分析 × {情绪量表、社会态度、概念文化史}，平台化（Macroscope），尚无临床与演化方向。</p>
-<h3>阶段 2：博后（2019.03–2022.09，MPHD 柏林 · CAR，正式导师 Ralph Hertwig）</h3>
-<p><b>风险决策化 + 疫情触发 + 临床线新增</b>：</p>
+<p><b>博士阶段方向画像</b>：文本分析 × {情绪量表、社会态度、概念文化史}，平台化（Macroscope），尚无临床与演化方向。</p></div></div>
+<div class="tl-phase" style="border-top:4px solid #f59e0b"><div class="tl-phead" style="background:#f59e0b12"><span class="tl-pbadge" style="background:#f59e0b">阶段 2</span><span class="tl-pname">博后</span><span class="tl-pwhen">2019.03–2022.09</span></div><div class="tl-pmeta"><span class="tl-chip">MPHD 柏林 · CAR</span><span class="tl-chip">正式导师 Ralph Hertwig</span></div><div class="tl-pbody md"><p><b>风险决策化 + 疫情触发 + 临床线新增</b>：</p>
 <table><thead><tr><th>时间</th><th>产出</th><th>方向意义</th></tr></thead><tbody>
 <tr><td>2020</td><td><b>J2</b> Cognition 风险简史（博士 Ch4 落地）</td><td>博士线收尾</td></tr>
 <tr><td>2020</td><td><b>J3</b> JEP LMC ERT（博士 Ch2 落地）</td><td>博士线收尾</td></tr>
@@ -207,9 +315,8 @@ box-shadow:0 1px 3px rgba(0,0,0,.05);scroll-margin-top:70px;transition:box-shado
 <tr><td>2022</td><td><b>J9</b> Frontiers 自杀遗书认知网络（Stella 一作）</td><td>临床线期刊化</td></tr>
 <tr><td>2022</td><td><b>P8</b> "The Struggle for Life Among Words"</td><td><b>转折点</b>：语言演化理论雏形（词间"生存斗争"隐喻）→ 3 年后 PNAS 2024</td></tr>
 </tbody></table>
-<p><b>博后阶段方向画像</b>：以风险/决策为轴（Hertwig 组语境），疫情把"情绪"线拉进公共健康场景，临床线（自杀遗书）从 0 到 1，语言线在尾声孕育出演化理论。</p>
-<h3>阶段 3：心理所（2022.09–，副研究员；2026 起兼马普伙伴组负责人）</h3>
-<p><b>语言演化主线化 + 三线并行收敛</b>：</p>
+<p><b>博后阶段方向画像</b>：以风险/决策为轴（Hertwig 组语境），疫情把"情绪"线拉进公共健康场景，临床线（自杀遗书）从 0 到 1，语言线在尾声孕育出演化理论。</p></div></div>
+<div class="tl-phase" style="border-top:4px solid #10b981"><div class="tl-phead" style="background:#10b98112"><span class="tl-pbadge" style="background:#10b981">阶段 3</span><span class="tl-pname">心理所</span><span class="tl-pwhen">2022.09–</span></div><div class="tl-pmeta"><span class="tl-chip">副研究员；2026 起兼马普伙伴组负责人</span></div><div class="tl-pbody md"><p><b>语言演化主线化 + 三线并行收敛</b>：</p>
 <table><thead><tr><th>时间</th><th>产出</th><th>方向意义</th></tr></thead><tbody>
 <tr><td>2024</td><td><b>J10</b> PNAS 认知选择如何影响语言变化（一作+共同通讯）</td><td><b>语言演化成为第一主线</b>（P8 理论成熟）</td></tr>
 <tr><td>2024</td><td><b>J11</b> Sci Rep 人类比 ChatGPT 创造更多新词（第 5 作者）</td><td>语言 × 生成式 AI 新场景</td></tr>
@@ -220,21 +327,19 @@ box-shadow:0 1px 3px rgba(0,0,0,.05);scroll-margin-top:70px;transition:box-shado
 <tr><td>2026</td><td><b>J16</b> Psych Rev in press（P10 期刊版，共同一作×3）</td><td>发展语义线期刊化</td></tr>
 </tbody></table>
 <p><b>当前方向画像</b>：语言演化（PNAS×2 级影响力）为主，临床（遗书）与决策（群体/集体行动）为辅，发展语义为新增长点；四个官方主题与此完全对应。</p>
-<hr>
-<h3>方向迁移总图</h3>
-<pre><code>
-方法论恒定：大规模量化文本分析（Macroscope 系 + 认知网络）
-            │
- 2016-2019  博士(华威/Hills)      情绪(ERT) + 社会态度(移民) + 概念史(风险) + 平台
-            │  Hertwig 从非正式导师 → 正式导师
- 2019-2022  博后(马普CAR/Hertwig) 风险决策轴化 + 疫情触发 + 临床线(遗书)从0到1
-            │  P8 "词语的生存斗争" → 理论萌芽
- 2022-2026+ 心理所(+马普双栖)     语言演化主线化(PNAS 2024/PsychRev 2026)
-                                  + 临床成熟 + 决策扩展(集体行动) + 发展语义新支
-</code></pre>
-<p><b>一句话</b>：博士造工具（Macroscope）与立范式 → 博后在风险/疫情/临床三场景验证 → 心理所把"语言演化"扶正为第一主线，其余降为支线并行。</p>
-<h3>证据清单（本地可查）</h3>
-<ul><li>博士论文：<code>pdfs/2019_LiYing_Warwick_FromWordsToMindThesis_从言语到心智博士论文.pdf</code>（摘要 p10、章节结构 p2-3、发表归属 p9、致谢 p8）</li><li>各阶段论文 PDF 均在 <code>pdfs/</code>（命名含年份，可直接按时间排序核对）</li><li>来源标注纪律：论文结构/致谢/摘要 = 【论文原文】；阶段划分中的"触发/主线化"判断 = 【推断，基于论文年份与作者表】</li></ul></div></div></div>
+<hr></div></div>
+<div class="tl-flow-wrap">
+<div class="pg-title">🧭 方向迁移总图<span class="pg-count">方法论恒定 · 应用对象迁移</span></div>
+<div class="tl-banner">⚙️ 方法论恒定：大规模量化文本分析（Macroscope 系 + 认知网络）</div>
+<div class="tl-step" style="border-left:5px solid #8b5cf6;background:#8b5cf60d"><div class="tl-when">2016–2019</div><div class="tl-who">博士(华威/Hills)</div><div class="tl-what">情绪(ERT) + 社会态度(移民) + 概念史(风险) + 平台</div></div>
+<div class="tl-arrow">Hertwig 从非正式导师 → 正式导师</div>
+<div class="tl-step" style="border-left:5px solid #8b5cf6;background:#8b5cf60d"><div class="tl-when">2019–2022</div><div class="tl-who">博后(马普CAR/Hertwig) 风险决策轴化 + 疫情触发 + 临床线(遗书)从0到1</div><div class="tl-what"></div></div>
+<div class="tl-arrow">P8 "词语的生存斗争" → 理论萌芽</div>
+<div class="tl-step" style="border-left:5px solid #f59e0b;background:#f59e0b0d"><div class="tl-when">2022–2026+</div><div class="tl-who">心理所(+马普双栖)</div><div class="tl-what">语言演化主线化(PNAS 2024/PsychRev 2026) + 临床成熟 + 决策扩展(集体行动) + 发展语义新支 <b>一句话</b>：博士造工具（Macroscope）与立范式 → 博后在风险/疫情/临床三场景验证 → 心理所把"语言演化"扶正为第一主线，其余降为支线并行。</div></div>
+</div>
+<div class="tl-oneliner"><b>一句话</b>：博士造工具（Macroscope）与立范式 → 博后在风险/疫情/临床三场景验证 → 心理所把"语言演化"扶正为第一主线，其余降为支线并行。</div>
+<div class="tl-ev"><div class="tl-ev-t">📎 证据清单（本地可查）</div><div class="md"><ul><li>博士论文：<code>pdfs/2019_LiYing_Warwick_FromWordsToMindThesis_从言语到心智博士论文.pdf</code>（摘要 p10、章节结构 p2-3、发表归属 p9、致谢 p8）</li><li>各阶段论文 PDF 均在 <code>pdfs/</code>（命名含年份，可直接按时间排序核对）</li><li>来源标注纪律：论文结构/致谢/摘要 = 【论文原文】；阶段划分中的"触发/主线化"判断 = 【推断，基于论文年份与作者表】</li></ul></div></div>
+</div></div>
 
 <div id="papers"><div class="section"><h2>📖 论文清单（32 条著录，J14 已排除标注）</h2>
 <div class="filters">
@@ -250,40 +355,48 @@ box-shadow:0 1px 3px rgba(0,0,0,.05);scroll-margin-top:70px;transition:box-shado
 <button class="fbtn" data-group="oa" data-val="nonOA">非OA</button>
 <span class="flabel" style="margin-left:14px;color:#94a3b8">行左侧色条 = 阶段（紫=博士 / 琥珀=博后 / 绿=心理所）</span>
 </div>
+<div class="paper-chips">
+<span class="chip">32 条著录</span>
+<span class="chip" style="color:#2563eb;border-color:#2563eb55">期刊 16</span>
+<span class="chip" style="color:#0d9488;border-color:#0d948855">预印本 11</span>
+<span class="chip" style="color:#f59e0b;border-color:#f59e0b55">会议 4</span>
+<span class="chip" style="color:#8b5cf6;border-color:#8b5cf655">论文 1</span>
+<span class="chip excl-chip">⚠ J14 已排除（同名不同人）</span>
+</div>
 <table id="paperTable"><thead><tr><th>ID</th><th>年</th><th>载体</th><th>中文题</th><th>类型</th><th>OA</th><th>DOI</th><th>备注</th></tr></thead>
 <tbody>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-J1"><b>J1</b></a></td><td>2019</td><td>BRM</td><td>大规模文本语料语义分析平台Macroscope</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3758/s13428-018-1177-6" target="_blank">10.3758/s13428-018-1177-6</a></td><td class="note-cell"></td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J2"><b>J2</b></a></td><td>2020</td><td>Cog</td><td>风险简史</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1016/j.cognition.2020.104344" target="_blank">10.1016/j.cognition.2020.104344</a></td><td class="note-cell"></td></tr>
-<tr data-type="journal" data-oa="nonOA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J3"><b>J3</b></a></td><td>2020</td><td>JEPLMC</td><td>情绪回忆任务</td><td>期刊</td><td><span class="tag noa">非OA</span></td><td class="doi"><a href="https://doi.org/10.1037/xlm0000841" target="_blank">10.1037/xlm0000841</a></td><td class="note-cell">APA付费;MPI PuRe有post-print</td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J4"><b>J4</b></a></td><td>2021</td><td>SSM</td><td>疫情中的情绪变化</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1016/j.socscimed.2021.114222" target="_blank">10.1016/j.socscimed.2021.114222</a></td><td class="note-cell"></td></tr>
-<tr data-type="journal" data-oa="nonOA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J5"><b>J5</b></a></td><td>2021</td><td>Cog</td><td>群体偏见的语言模式</td><td>期刊</td><td><span class="tag noa">非OA</span></td><td class="doi"><a href="https://doi.org/10.1016/j.cognition.2021.104813" target="_blank">10.1016/j.cognition.2021.104813</a></td><td class="note-cell">Sci-Hub路线;PuRe有post-print</td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J6"><b>J6</b></a></td><td>2021</td><td>MDPI</td><td>DASentimental方言语料库</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3390/bdcc5040077" target="_blank">10.3390/bdcc5040077</a></td><td class="note-cell">MDPI OA</td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J7"><b>J7</b></a></td><td>2022</td><td>MemCog</td><td>语义的历时变化</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3758/s13421-022-01331-0" target="_blank">10.3758/s13421-022-01331-0</a></td><td class="note-cell">BMC OA</td></tr>
-<tr data-type="journal" data-oa="nonOA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J8"><b>J8</b></a></td><td>2022</td><td>AmPsych</td><td>风险感知是否驱动预防行为</td><td>期刊</td><td><span class="tag noa">非OA</span></td><td class="doi"><a href="https://doi.org/10.1037/amp0000885" target="_blank">10.1037/amp0000885</a></td><td class="note-cell">APA付费</td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J9"><b>J9</b></a></td><td>2022</td><td>FrontPsych</td><td>认知网络检测自杀遗书的结构模式</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3389/fpsyg.2022.917630" target="_blank">10.3389/fpsyg.2022.917630</a></td><td class="note-cell">Frontiers OA</td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J10"><b>J10</b></a></td><td>2024</td><td>PNAS</td><td>认知选择如何影响语言变化</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1073/pnas.2220898120" target="_blank">10.1073/pnas.2220898120</a></td><td class="note-cell"></td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J11"><b>J11</b></a></td><td>2024</td><td>SciRep</td><td>人类比ChatGPT创造更多新词</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1038/s41598-023-50229-7" target="_blank">10.1038/s41598-023-50229-7</a></td><td class="note-cell">李赢第5作者</td></tr>
-<tr data-type="journal" data-oa="unknown" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J12"><b>J12</b></a></td><td>2025</td><td>PCHJ</td><td>增强少数意见的凝聚力与影响力</td><td>期刊</td><td><span class="tag unk">待核</span></td><td class="doi"><a href="https://doi.org/10.1002/pchj.70051" target="_blank">10.1002/pchj.70051</a></td><td class="note-cell">Wiley待验证</td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J13"><b>J13</b></a></td><td>2026</td><td>PNAS</td><td>集体行动中的私人解决方案陷阱</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1073/pnas.2504632123" target="_blank">10.1073/pnas.2504632123</a></td><td class="note-cell"></td></tr>
-<tr data-type="journal" data-oa="EXCLUDE" data-excl="1" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J14"><b>J14</b></a></td><td>2023</td><td>PRBM</td><td>放开疫情管控的影响</td><td>期刊</td><td><span class="tag excl">已排除</span></td><td class="doi"><a href="https://doi.org/10.2147/prbm.s434765" target="_blank">10.2147/prbm.s434765</a></td><td class="note-cell">已排除:末作者Ying Li属苏州城市学院(yingli.szcityu@gmail.com)非目标李赢;EPMC匹配系第4作者Chong Chen挂心理所</td></tr>
-<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J15"><b>J15</b></a></td><td>2025</td><td>BDCC</td><td>自杀遗书焦虑维度期刊版</td><td>期刊</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3390/bdcc9070171" target="_blank">10.3390/bdcc9070171</a></td><td class="note-cell">P9的期刊版;MDPI OA;csauthors补漏</td></tr>
-<tr data-type="journal" data-oa="INPRESS" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J16"><b>J16</b></a></td><td>2026</td><td>PsychRev</td><td>年长却更快语义处理期刊版</td><td>期刊</td><td><span class="tag inp">in press</span></td><td class="doi">—</td><td class="note-cell">Psychological Review in press(2026);与P10(yzufb)同文;无DOI;待正式发表后补PDF</td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-P1"><b>P1</b></a></td><td>2018</td><td>OSF</td><td>风险简史预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/8vqhm" target="_blank">10.31234/osf.io/8vqhm</a></td><td class="note-cell">后发表于Cognition 2020</td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P2"><b>P2</b></a></td><td>2020</td><td>OSF</td><td>情绪回忆任务预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/r6tvh" target="_blank">10.31219/osf.io/r6tvh</a></td><td class="note-cell">后发表于JEP LMC 2020</td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P3"><b>P3</b></a></td><td>2020</td><td>OSF</td><td>疫情情绪变化预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/9dfep" target="_blank">10.31219/osf.io/9dfep</a></td><td class="note-cell">后发表于SSM 2021</td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P4"><b>P4</b></a></td><td>2020</td><td>OSF</td><td>群体偏见语言预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/zxhde" target="_blank">10.31219/osf.io/zxhde</a></td><td class="note-cell">后发表于Cognition 2021</td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P5"><b>P5</b></a></td><td>2020</td><td>OSF</td><td>语义历时变化预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/x7ft3" target="_blank">10.31219/osf.io/x7ft3</a></td><td class="note-cell">后发表于Mem Cognit 2022</td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P6"><b>P6</b></a></td><td>2021</td><td>PsyArXiv</td><td>认知网络识别自杀遗书痛苦维度预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/8gvr2" target="_blank">10.31234/osf.io/8gvr2</a></td><td class="note-cell"></td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P7"><b>P7</b></a></td><td>2021</td><td>OSF</td><td>认知网络科学框架预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/frvta" target="_blank">10.31234/osf.io/frvta</a></td><td class="note-cell"></td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P8"><b>P8</b></a></td><td>2022</td><td>OSF</td><td>词语间的生存斗争预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/tgeqm" target="_blank">10.31219/osf.io/tgeqm</a></td><td class="note-cell">后发表于PNAS 2024</td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-P9"><b>P9</b></a></td><td>2023</td><td>PsyArXiv</td><td>认知网络与文本分析识别焦虑预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/m2k67" target="_blank">10.31234/osf.io/m2k67</a></td><td class="note-cell">OSF文件已被作者删除(410);内容已由J15期刊版覆盖</td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-P10"><b>P10</b></a></td><td>2025</td><td>OSF</td><td>年长却更快预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/yzufb_v1" target="_blank">10.31234/osf.io/yzufb_v1</a></td><td class="note-cell"></td></tr>
-<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-P11"><b>P11</b></a></td><td>2024</td><td>RS</td><td>集体行动私人解决方案评估预印本</td><td>预印本</td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.21203/rs.3.rs-4924647/v1" target="_blank">10.21203/rs.3.rs-4924647/v1</a></td><td class="note-cell">后发表于PNAS 2026</td></tr>
-<tr data-type="conference" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-C1"><b>C1</b></a></td><td>2018</td><td>CogSci</td><td>检索你的感受2.0</td><td>会议</td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">CogSci 2018 Masitah LiY Hills TT;PDF:escholarship.org/content/qt67k8k2jr/qt67k8k2jr.pdf</td></tr>
-<tr data-type="conference" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-C2"><b>C2</b></a></td><td>2017</td><td>CogSci</td><td>检索你的感受Luke版</td><td>会议</td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">CogSci 2017 Masitah LiY Hills TT;escholarship.org;已下载</td></tr>
-<tr data-type="conference" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-C3"><b>C3</b></a></td><td>2017</td><td>CogSci</td><td>他人感知移民群体的报纸表征</td><td>会议</td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">CogSci 2017 LiY Hills TT;已下载</td></tr>
-<tr data-type="conference" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-C4"><b>C4</b></a></td><td>2016</td><td>CogSci</td><td>风险的历史语义</td><td>会议</td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">CogSci 2016 LiY Hills TT;已下载</td></tr>
-<tr data-type="thesis" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-T1"><b>T1</b></a></td><td>2019</td><td>Warwick</td><td>从言语到心智博士论文</td><td>论文</td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">华威大学博士论文;导师Thomas Hills;Leverhulme Trust资助;WRAP 152056;已下载</td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-J1"><b>J1</b></a></td><td>2019</td><td>BRM</td><td>大规模文本语料语义分析平台Macroscope</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3758/s13428-018-1177-6" target="_blank">10.3758/s13428-018-1177-6</a></td><td class="note-cell"></td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J2"><b>J2</b></a></td><td>2020</td><td>Cog</td><td>风险简史</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1016/j.cognition.2020.104344" target="_blank">10.1016/j.cognition.2020.104344</a></td><td class="note-cell"></td></tr>
+<tr data-type="journal" data-oa="nonOA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J3"><b>J3</b></a></td><td>2020</td><td>JEPLMC</td><td>情绪回忆任务</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag noa">非OA</span></td><td class="doi"><a href="https://doi.org/10.1037/xlm0000841" target="_blank">10.1037/xlm0000841</a></td><td class="note-cell">APA付费;MPI PuRe有post-print</td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J4"><b>J4</b></a></td><td>2021</td><td>SSM</td><td>疫情中的情绪变化</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1016/j.socscimed.2021.114222" target="_blank">10.1016/j.socscimed.2021.114222</a></td><td class="note-cell"></td></tr>
+<tr data-type="journal" data-oa="nonOA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J5"><b>J5</b></a></td><td>2021</td><td>Cog</td><td>群体偏见的语言模式</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag noa">非OA</span></td><td class="doi"><a href="https://doi.org/10.1016/j.cognition.2021.104813" target="_blank">10.1016/j.cognition.2021.104813</a></td><td class="note-cell">Sci-Hub路线;PuRe有post-print</td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J6"><b>J6</b></a></td><td>2021</td><td>MDPI</td><td>DASentimental方言语料库</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3390/bdcc5040077" target="_blank">10.3390/bdcc5040077</a></td><td class="note-cell">MDPI OA</td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J7"><b>J7</b></a></td><td>2022</td><td>MemCog</td><td>语义的历时变化</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3758/s13421-022-01331-0" target="_blank">10.3758/s13421-022-01331-0</a></td><td class="note-cell">BMC OA</td></tr>
+<tr data-type="journal" data-oa="nonOA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J8"><b>J8</b></a></td><td>2022</td><td>AmPsych</td><td>风险感知是否驱动预防行为</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag noa">非OA</span></td><td class="doi"><a href="https://doi.org/10.1037/amp0000885" target="_blank">10.1037/amp0000885</a></td><td class="note-cell">APA付费</td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-J9"><b>J9</b></a></td><td>2022</td><td>FrontPsych</td><td>认知网络检测自杀遗书的结构模式</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3389/fpsyg.2022.917630" target="_blank">10.3389/fpsyg.2022.917630</a></td><td class="note-cell">Frontiers OA</td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J10"><b>J10</b></a></td><td>2024</td><td>PNAS</td><td>认知选择如何影响语言变化</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1073/pnas.2220898120" target="_blank">10.1073/pnas.2220898120</a></td><td class="note-cell"></td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J11"><b>J11</b></a></td><td>2024</td><td>SciRep</td><td>人类比ChatGPT创造更多新词</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1038/s41598-023-50229-7" target="_blank">10.1038/s41598-023-50229-7</a></td><td class="note-cell">李赢第5作者</td></tr>
+<tr data-type="journal" data-oa="unknown" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J12"><b>J12</b></a></td><td>2025</td><td>PCHJ</td><td>增强少数意见的凝聚力与影响力</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag unk">待核</span></td><td class="doi"><a href="https://doi.org/10.1002/pchj.70051" target="_blank">10.1002/pchj.70051</a></td><td class="note-cell">Wiley待验证</td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J13"><b>J13</b></a></td><td>2026</td><td>PNAS</td><td>集体行动中的私人解决方案陷阱</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.1073/pnas.2504632123" target="_blank">10.1073/pnas.2504632123</a></td><td class="note-cell"></td></tr>
+<tr data-type="journal" data-oa="EXCLUDE" data-excl="1" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J14"><b>J14</b></a></td><td>2023</td><td>PRBM</td><td>放开疫情管控的影响</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag excl">已排除</span></td><td class="doi"><a href="https://doi.org/10.2147/prbm.s434765" target="_blank">10.2147/prbm.s434765</a></td><td class="note-cell">已排除:末作者Ying Li属苏州城市学院(yingli.szcityu@gmail.com)非目标李赢;EPMC匹配系第4作者Chong Chen挂心理所</td></tr>
+<tr data-type="journal" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J15"><b>J15</b></a></td><td>2025</td><td>BDCC</td><td>自杀遗书焦虑维度期刊版</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.3390/bdcc9070171" target="_blank">10.3390/bdcc9070171</a></td><td class="note-cell">P9的期刊版;MDPI OA;csauthors补漏</td></tr>
+<tr data-type="journal" data-oa="INPRESS" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-J16"><b>J16</b></a></td><td>2026</td><td>PsychRev</td><td>年长却更快语义处理期刊版</td><td><span class="type-pill" style="color:#2563eb;background:#2563eb12;border-color:#2563eb55">期刊</span></td><td><span class="tag inp">in press</span></td><td class="doi">—</td><td class="note-cell">Psychological Review in press(2026);与P10(yzufb)同文;无DOI;待正式发表后补PDF</td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-P1"><b>P1</b></a></td><td>2018</td><td>OSF</td><td>风险简史预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/8vqhm" target="_blank">10.31234/osf.io/8vqhm</a></td><td class="note-cell">后发表于Cognition 2020</td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P2"><b>P2</b></a></td><td>2020</td><td>OSF</td><td>情绪回忆任务预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/r6tvh" target="_blank">10.31219/osf.io/r6tvh</a></td><td class="note-cell">后发表于JEP LMC 2020</td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P3"><b>P3</b></a></td><td>2020</td><td>OSF</td><td>疫情情绪变化预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/9dfep" target="_blank">10.31219/osf.io/9dfep</a></td><td class="note-cell">后发表于SSM 2021</td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P4"><b>P4</b></a></td><td>2020</td><td>OSF</td><td>群体偏见语言预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/zxhde" target="_blank">10.31219/osf.io/zxhde</a></td><td class="note-cell">后发表于Cognition 2021</td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P5"><b>P5</b></a></td><td>2020</td><td>OSF</td><td>语义历时变化预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/x7ft3" target="_blank">10.31219/osf.io/x7ft3</a></td><td class="note-cell">后发表于Mem Cognit 2022</td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P6"><b>P6</b></a></td><td>2021</td><td>PsyArXiv</td><td>认知网络识别自杀遗书痛苦维度预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/8gvr2" target="_blank">10.31234/osf.io/8gvr2</a></td><td class="note-cell"></td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P7"><b>P7</b></a></td><td>2021</td><td>OSF</td><td>认知网络科学框架预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/frvta" target="_blank">10.31234/osf.io/frvta</a></td><td class="note-cell"></td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #f59e0b"><td><a class="pid-link" href="#pc-P8"><b>P8</b></a></td><td>2022</td><td>OSF</td><td>词语间的生存斗争预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31219/osf.io/tgeqm" target="_blank">10.31219/osf.io/tgeqm</a></td><td class="note-cell">后发表于PNAS 2024</td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-P9"><b>P9</b></a></td><td>2023</td><td>PsyArXiv</td><td>认知网络与文本分析识别焦虑预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/m2k67" target="_blank">10.31234/osf.io/m2k67</a></td><td class="note-cell">OSF文件已被作者删除(410);内容已由J15期刊版覆盖</td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-P10"><b>P10</b></a></td><td>2025</td><td>OSF</td><td>年长却更快预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.31234/osf.io/yzufb_v1" target="_blank">10.31234/osf.io/yzufb_v1</a></td><td class="note-cell"></td></tr>
+<tr data-type="preprint" data-oa="OA" data-excl="0" style="border-left:3px solid #10b981"><td><a class="pid-link" href="#pc-P11"><b>P11</b></a></td><td>2024</td><td>RS</td><td>集体行动私人解决方案评估预印本</td><td><span class="type-pill" style="color:#0d9488;background:#0d948812;border-color:#0d948855">预印本</span></td><td><span class="tag oa">OA</span></td><td class="doi"><a href="https://doi.org/10.21203/rs.3.rs-4924647/v1" target="_blank">10.21203/rs.3.rs-4924647/v1</a></td><td class="note-cell">后发表于PNAS 2026</td></tr>
+<tr data-type="conference" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-C1"><b>C1</b></a></td><td>2018</td><td>CogSci</td><td>检索你的感受2.0</td><td><span class="type-pill" style="color:#f59e0b;background:#f59e0b12;border-color:#f59e0b55">会议</span></td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">CogSci 2018 Masitah LiY Hills TT;PDF:escholarship.org/content/qt67k8k2jr/qt67k8k2jr.pdf</td></tr>
+<tr data-type="conference" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-C2"><b>C2</b></a></td><td>2017</td><td>CogSci</td><td>检索你的感受Luke版</td><td><span class="type-pill" style="color:#f59e0b;background:#f59e0b12;border-color:#f59e0b55">会议</span></td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">CogSci 2017 Masitah LiY Hills TT;escholarship.org;已下载</td></tr>
+<tr data-type="conference" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-C3"><b>C3</b></a></td><td>2017</td><td>CogSci</td><td>他人感知移民群体的报纸表征</td><td><span class="type-pill" style="color:#f59e0b;background:#f59e0b12;border-color:#f59e0b55">会议</span></td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">CogSci 2017 LiY Hills TT;已下载</td></tr>
+<tr data-type="conference" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-C4"><b>C4</b></a></td><td>2016</td><td>CogSci</td><td>风险的历史语义</td><td><span class="type-pill" style="color:#f59e0b;background:#f59e0b12;border-color:#f59e0b55">会议</span></td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">CogSci 2016 LiY Hills TT;已下载</td></tr>
+<tr data-type="thesis" data-oa="OA" data-excl="0" style="border-left:3px solid #8b5cf6"><td><a class="pid-link" href="#pc-T1"><b>T1</b></a></td><td>2019</td><td>Warwick</td><td>从言语到心智博士论文</td><td><span class="type-pill" style="color:#8b5cf6;background:#8b5cf612;border-color:#8b5cf655">论文</span></td><td><span class="tag oa">OA</span></td><td class="doi">—</td><td class="note-cell">华威大学博士论文;导师Thomas Hills;Leverhulme Trust资助;WRAP 152056;已下载</td></tr>
 </tbody></table>
 <p class="note">T1=博士论文（华威，112 页，已抽取用于时间线与致谢分析）；J16 无 DOI（in press）；C1–C4 无 DOI（CogSci 会议，escholarship）。</p>
 </div></div>
@@ -306,7 +419,7 @@ box-shadow:0 1px 3px rgba(0,0,0,.05);scroll-margin-top:70px;transition:box-shado
 <div class="pc" id="pc-J7" style="border-left:4px solid #f59e0b"><div class="pc-head"><span class="pc-id" style="background:#2563eb">J7</span><span class="pc-name">语义的历时变化</span><span class="pc-year">2022</span><span class="pc-type" style="color:#2563eb">期刊</span></div><div class="pc-en">Diachronic semantic change in language is constrained by how people use and learn language</div><div class="pc-meta">Memory &amp; Cognition (MemCog) · OA · Li, Siew（一作）</div><div class="pc-body">词义的变化不是乱漂的，"为什么朝这个方向漂、而不是那个方向"？比如"傻"早年指"天真朴实"，现在指"笨"。他用模拟实验回答：词义往哪变，被"人们实际怎么用这个词、怎么学会这个词"给卡住了——语言变化是有轨道的，轨道是人脑的工作方式铺的。这是语言演化那条线的理论深水区，直接为 2024 年的 PNAS（J10）铺路。</div></div>
 <div class="pc" id="pc-J8" style="border-left:4px solid #f59e0b"><div class="pc-head"><span class="pc-id" style="background:#2563eb">J8</span><span class="pc-name">风险感知与预防行为</span><span class="pc-year">2022</span><span class="pc-type" style="color:#2563eb">期刊</span></div><div class="pc-en">Does risk perception motivate preventive behavior during a pandemic? A longitudinal study in the United States and China</div><div class="pc-meta">American Psychologist · 非OA · Li, Luan, 李禹刚, 吴俊慧, 李雯琪, Hertwig（一作）</div><div class="pc-body">疫情里一个绕不开的问题：一个人"觉得自己可能得病"（风险感知），真的会推着他去戴口罩、少出门吗？直觉答案是"越怕越防"，但中美纵向数据说没那么简单——情绪、社会环境、行动成本全都掺在中间，感知和动作之间不是直线。发在 American Psychologist，这本刊面向"有思考的公众"，说明编辑觉得这个结论值得普通人知道。</div></div>
 <div class="pc" id="pc-J9" style="border-left:4px solid #f59e0b"><div class="pc-head"><span class="pc-id" style="background:#2563eb">J9</span><span class="pc-name">自杀遗书的认知网络</span><span class="pc-tag">临床线</span><span class="pc-year">2022</span><span class="pc-type" style="color:#2563eb">期刊</span></div><div class="pc-en">Cognitive networks detect structural patterns and emotional complexity in suicide notes</div><div class="pc-meta">Frontiers in Psychology · OA · Stella, Swanson, Li, Hills, Teixeira（Li 三作）</div><div class="pc-body">遗书怎么分析才不流于"找个别关键词"？这篇把遗书里的词当成网络上的点，哪些词总连在一起就连一条边，最后看整个"认知网络"的结构。对比正常文本，遗书网络有自己独特的结构模式和情感复杂性——找"结构"比找"个别词"稳得多。这条线是意大利 Stella 团队的临床方向，李赢是三作，也是他中间作者身份出现最多的地方。</div></div>
-<div class="pc star" id="pc-J10" style="border-left:4px solid #10b981"><div class="pc-head"><span class="pc-id" style="background:#2563eb">J10</span><span class="pc-name">认知选择（代表作）</span><span class="pc-tag">代表作</span><span class="pc-year">2024</span><span class="pc-type" style="color:#2563eb">期刊</span></div><div class="pc-en">How cognitive selection affects language change</div><div class="pc-meta">PNAS · OA · Li<i>, Breithaupt</i>, Hills, Lin, Chen, Siew, Hertwig（共同一作，双星）</div><div class="pc-body">他的学术名片。核心问题一句话：语言变化背后那只"看不见的手"到底是谁？他用"传话游戏"做实验——一个含义传过一串人，看哪个版本活下来；再拿两百年的词频大数据交叉验证。结论是：活下来的不是最"正确"的含义，而是人"觉得好懂、好记、更偏好"的含义——语言演化就是自然选择，选择压力来自认知。预印本 P8 的题目 <i>The Struggle for Life among Words</i>（词之间的生存斗争）更直白。</div><div class="pc-angle">💡 面试角度：面试最值深挖的一篇；它还是"AI 生成的语言算不算语言变化"这个问题的理论底座——大模型恰好是另一种"选择机制"。</div></div>
+<div class="pc star" id="pc-J10" style="border-left:4px solid #10b981"><div class="pc-head"><span class="pc-id" style="background:#2563eb">J10</span><span class="pc-name">认知选择（代表作）</span><span class="pc-tag">代表作</span><span class="pc-year">2024</span><span class="pc-type" style="color:#2563eb">期刊</span></div><div class="pc-en">How cognitive selection affects language change</div><div class="pc-meta">PNAS · OA · Li*, Breithaupt*, Hills, Lin, Chen, Siew, Hertwig（共同一作，双星）</div><div class="pc-body">他的学术名片。核心问题一句话：语言变化背后那只"看不见的手"到底是谁？他用"传话游戏"做实验——一个含义传过一串人，看哪个版本活下来；再拿两百年的词频大数据交叉验证。结论是：活下来的不是最"正确"的含义，而是人"觉得好懂、好记、更偏好"的含义——语言演化就是自然选择，选择压力来自认知。预印本 P8 的题目 <i>The Struggle for Life among Words</i>（词之间的生存斗争）更直白。</div><div class="pc-angle">💡 面试角度：面试最值深挖的一篇；它还是"AI 生成的语言算不算语言变化"这个问题的理论底座——大模型恰好是另一种"选择机制"。</div></div>
 <div class="pc" id="pc-J11" style="border-left:4px solid #10b981"><div class="pc-head"><span class="pc-id" style="background:#2563eb">J11</span><span class="pc-name">人类 vs ChatGPT</span><span class="pc-tag">AI×语言</span><span class="pc-year">2024</span><span class="pc-type" style="color:#2563eb">期刊</span></div><div class="pc-en">Humans create more novelty than ChatGPT when asked to retell a story</div><div class="pc-meta">Scientific Reports (SciRep) · OA · Breithaupt, Otenen, Wright, Kruschke, Li, Tan（Li 五作）</div><div class="pc-body">让人和 ChatGPT 都复述同一个故事，比谁的复述里"新词"多——结果人赢了。原因不神秘：大模型生成的是"最可能的那条路"，产出平均但安全的文本；人会给出不那么常见、真正新奇的组合。"会生成"不等于"有新意"，这篇给这句话提供了数据。李赢是第五作者，在 Breithaupt（J10 的共一作者）团队里参与。</div><div class="pc-angle">💡 面试角度："AI × 语言"的现成公开接口，如果面试里有 LLM 背景，这篇最接得上话。</div></div>
 <div class="pc" id="pc-J12" style="border-left:4px solid #10b981"><div class="pc-head"><span class="pc-id" style="background:#2563eb">J12</span><span class="pc-name">少数意见的凝聚力</span><span class="pc-tag">国内合作</span><span class="pc-year">2025</span><span class="pc-type" style="color:#2563eb">期刊</span></div><div class="pc-en">Enhancing the Cohesion and Influence of Minority Opinions Through Clustering</div><div class="pc-meta">PsyCh J · OA 状态待验证 · 新文（被引 0） · 吴百洲, 刘俊, Li Ying, Shen-Zhang Chenran, 滦盛华（Li 三作）</div><div class="pc-body">少数意见天然容易被淹没，怎么办？社会网络实验给出一个直觉但需要证明的答案："聚成一堆"——让持少数意见的人彼此相邻、形成小"阵营"，内部凝聚力和对外的影响力都会上去。"抱团"比"散点"强。对舆论传播、群体决策、怎么让少数派发声都有直接含义。这是他回国后与国内团队合作的产物——合作圈从海外老圈子向国内延伸的信号。</div></div>
 <div class="pc star" id="pc-J13" style="border-left:4px solid #10b981"><div class="pc-head"><span class="pc-id" style="background:#2563eb">J13</span><span class="pc-name">私人解决方案陷阱（PNAS）</span><span class="pc-tag">代表作</span><span class="pc-tag">34国</span><span class="pc-year">2026</span><span class="pc-type" style="color:#2563eb">期刊</span></div><div class="pc-en">The private solution trap in collective action problems across 34 nations</div><div class="pc-meta">PNAS · OA · Malthouse, Pilgrim, Sgroi 等约 75 人，Hills 末位（Li 中间作者）</div><div class="pc-body">集体行动难题里藏着一个陷阱：每个人都在各自找"私人办法"解决自己的麻烦——你装空气净化器、我囤口罩、他去买保险。个体的小麻烦都解决了，但"集体行动"反而没人牵头，大问题越拖越大。约 75 人、34 国的大样本检验确认这个"陷阱"是真的，不是安慰剂。李赢是中间作者，Hills 是末位——典型的"学生-老师谱系"大协作项目，2026 年 PNAS，最新的大协作代表作。</div></div>
@@ -333,116 +446,53 @@ box-shadow:0 1px 3px rgba(0,0,0,.05);scroll-margin-top:70px;transition:box-shado
 </div></div>
 
 <div id="persona"><div class="section"><h2>🪞 人格画像（博士论文致谢页样本）</h2>
-<div class="md"><h2 class='mdt'>李赢博士论文致谢 — 人格特点分析</h2>
-<p>生成: 2026-09-29 | 证据基础: 本地博士论文 p8 致谢页（pypdf 抽取，原文为英文） 纪律: 证据 / 推断 / 限制 三段分离，推断均标注强度 源文件: pdfs/2019_LiYing_Warwick_FromWordsToMindThesis_从言语到心智博士论文.pdf</p>
-<h3>一、硬证据（致谢页直接引文，6 对象）</h3>
-<table><thead><tr><th>致谢对象</th><th>关键引文（英文原文节选）</th><th>承载的事实</th></tr></thead><tbody>
-<tr><td>Thomas Hills（主导师）</td><td>"an ideal exemplar of an intelligent, open-minded, creative, unconventional, modest, and dedicated scholar"；"help + great freedom"；"enjoyed my PhD in a way that far exceeds my most optimistic expectation"</td><td>主导师；明确被授予自主空间；满意度极高</td></tr>
-<tr><td>Ralph Hertwig</td><td>"certainly an unofficial advisor during my PhD and official advisor in the next 3 years"</td><td>谱系硬衔接：博士非正式导师=博后正式导师</td></tr>
-<tr><td>Engelthaler / Siew（同辈）</td><td>"dear friends... fun time hanging out... supporting and learning from each other"</td><td>水平化、互惠的同伴关系</td></tr>
-<tr><td>Leverhulme Trust</td><td>"seeing the potential in me"；资助 "my interests and ideas"</td><td>资助方；外部对其"潜力"的背书</td></tr>
-<tr><td>院系/学校</td><td>"feel like a home"；"forever hold a special place in my heart"</td><td>对机构的归属感</td></tr>
-<tr><td>家人（六位点名）</td><td>"unconditional love"；"the most powerful support in my life"</td><td>侯闻洁、李增民、张渌水、侯复华、申屠冬花、李运</td></tr>
-</tbody></table>
-<h3>二、人格推断（按强度排序）</h3>
-<ol><li><b>家庭优先的价值观结构（强推断）</b>：致谢结尾把最强情感词（"most powerful support"）留给六位点名家人，且论文 dedication 给他们。家庭的价值权重明显高于事业/机构。</li><li><b>自主-胜任需要突出，内在动机型（强推断）</b>："支持+自由"主题对反复出现（Hills 的 "great freedom"、Leverhulme 的 "my interests and ideas"），自我决定理论三要素（自主/胜任/关系）齐备；动机来自内部兴趣而非外部评价。</li><li><b>高情感表达度，情感/分析双通道（中强推断）</b>：在学术文体里直接使用 "home"、"special place in my heart" 这类情感语言；同时论文本体是对语言数据的理性分析——双通道并存。</li><li><b>同伴关系水平化互惠（中强推断）</b>：对同辈的描述全部是 "each other"（相互支持/相互学习），无层级词，与其后大量共同一作/共同通讯的署名方式一致。</li><li><b>记人好、感谢面宽（中等推断）</b>：连非正式关系的 "unofficial advisor" 也郑重写入——关系账户清晰完整，不只认正式资源。</li><li><b>审美偏好泄露：欣赏 unconventional（中等推断）</b>：赞美导师的六词清单（open-minded / creative / unconventional / modest / dedicated）实为自己的角色模范自白，与其后选择语言演化这一冷门长线主题一致。</li></ol>
-<h3>三、与后续行为 cross-check（互证，均来自本地语料）</h3>
-<table><thead><tr><th>推断</th><th>后续行为</th><th>一致性</th></tr></thead><tbody>
-<tr><td>水平化互惠</td><td>大量共同一作/共同通讯（J10 PNAS 2024、J16 PsychRev in press）</td><td>高</td></tr>
-<tr><td>欣赏 unconventional</td><td>语言演化冷门长线（J1、J10、J13 PNAS 2026）</td><td>高</td></tr>
-<tr><td>安全基地（支持+自由）</td><td>博士→博后→心理所无缝衔接，跨机构长关系（Hertwig 线延续 3 年）</td><td>高</td></tr>
-<tr><td>家庭优先</td><td>2022 年回国（推测性解释，数据无法证实）</td><td>弱一致</td></tr>
-</tbody></table>
-<h3>四、限制</h3>
-<ul><li>致谢是体裁化文本，受社会期许影响；情感强度受书写规范调节。</li><li>单页样本反映 2019 年书写状态，不可外推至当下。</li><li>笔误（"advises"、"founded by"）只说明赶工，不能反推做事不严谨。</li><li>未提伴侣 = 无信息，不推断其婚恋/家庭结构。</li></ul>
-<h3>一句话画像</h3>
-<p>家庭为锚、自主为需、情感与分析双通道、关系账户清晰且水平化——一个把"被支持+被放权"体验内化成研究风格（合作署名、冷门长线、跨机构长关系）的人。致谢和他后来 PNAS 论文上的署名结构，其实是同一种人格的两种书写。</p></div></div></div>
+
+<div class="pg-title">一、硬证据（致谢页直接引文，6 对象）</div>
+<div class="pv-ev-grid"><div class="pv-ev" style="border-top:3px solid #2563eb"><div class="pv-ev-name">Thomas Hills（主导师）</div><div class="pv-quote">"an ideal exemplar of an intelligent, open-minded, creative, unconventional, modest, and dedicated scholar"</div><div class="pv-quote">"help + great freedom"</div><div class="pv-quote">"enjoyed my PhD in a way that far exceeds my most optimistic expectation"</div><div class="pv-ev-fact">📌 主导师；明确被授予自主空间；满意度极高</div></div><div class="pv-ev" style="border-top:3px solid #8b5cf6"><div class="pv-ev-name">Ralph Hertwig</div><div class="pv-quote">"certainly an unofficial advisor during my PhD and official advisor in the next 3 years"</div><div class="pv-ev-fact">📌 谱系硬衔接：博士非正式导师=博后正式导师</div></div><div class="pv-ev" style="border-top:3px solid #0d9488"><div class="pv-ev-name">Engelthaler / Siew（同辈）</div><div class="pv-quote">"dear friends... fun time hanging out... supporting and learning from each other"</div><div class="pv-ev-fact">📌 水平化、互惠的同伴关系</div></div><div class="pv-ev" style="border-top:3px solid #f59e0b"><div class="pv-ev-name">Leverhulme Trust</div><div class="pv-quote">"seeing the potential in me"</div><div class="pv-quote">资助 "my interests and ideas"</div><div class="pv-ev-fact">📌 资助方；外部对其"潜力"的背书</div></div><div class="pv-ev" style="border-top:3px solid #10b981"><div class="pv-ev-name">院系/学校</div><div class="pv-quote">"feel like a home"</div><div class="pv-quote">"forever hold a special place in my heart"</div><div class="pv-ev-fact">📌 对机构的归属感</div></div><div class="pv-ev" style="border-top:3px solid #e11d48"><div class="pv-ev-name">家人（六位点名）</div><div class="pv-quote">"unconditional love"</div><div class="pv-quote">"the most powerful support in my life"</div><div class="pv-ev-fact">📌 侯闻洁、李增民、张渌水、侯复华、申屠冬花、李运</div></div></div>
+<div class="pg-title">二、人格推断（按强度排序）</div>
+<div class="pv-inf"><span class="pv-inf-num" style="background:#10b981">1</span><div class="pv-inf-main"><div class="pv-inf-head"><b>家庭优先的价值观结构</b><span class="pv-pill" style="color:#10b981;border-color:#10b98166;background:#10b98112">强推断</span></div><div class="pv-inf-body">致谢结尾把最强情感词（"most powerful support"）留给六位点名家人，且论文 dedication 给他们。家庭的价值权重明显高于事业/机构。</div></div></div><div class="pv-inf"><span class="pv-inf-num" style="background:#10b981">2</span><div class="pv-inf-main"><div class="pv-inf-head"><b>自主-胜任需要突出，内在动机型</b><span class="pv-pill" style="color:#10b981;border-color:#10b98166;background:#10b98112">强推断</span></div><div class="pv-inf-body">"支持+自由"主题对反复出现（Hills 的 "great freedom"、Leverhulme 的 "my interests and ideas"），自我决定理论三要素（自主/胜任/关系）齐备；动机来自内部兴趣而非外部评价。</div></div></div><div class="pv-inf"><span class="pv-inf-num" style="background:#2563eb">3</span><div class="pv-inf-main"><div class="pv-inf-head"><b>高情感表达度，情感/分析双通道</b><span class="pv-pill" style="color:#2563eb;border-color:#2563eb66;background:#2563eb12">中强推断</span></div><div class="pv-inf-body">在学术文体里直接使用 "home"、"special place in my heart" 这类情感语言；同时论文本体是对语言数据的理性分析——双通道并存。</div></div></div><div class="pv-inf"><span class="pv-inf-num" style="background:#2563eb">4</span><div class="pv-inf-main"><div class="pv-inf-head"><b>同伴关系水平化互惠</b><span class="pv-pill" style="color:#2563eb;border-color:#2563eb66;background:#2563eb12">中强推断</span></div><div class="pv-inf-body">对同辈的描述全部是 "each other"（相互支持/相互学习），无层级词，与其后大量共同一作/共同通讯的署名方式一致。</div></div></div><div class="pv-inf"><span class="pv-inf-num" style="background:#f59e0b">5</span><div class="pv-inf-main"><div class="pv-inf-head"><b>记人好、感谢面宽</b><span class="pv-pill" style="color:#f59e0b;border-color:#f59e0b66;background:#f59e0b12">中等推断</span></div><div class="pv-inf-body">连非正式关系的 "unofficial advisor" 也郑重写入——关系账户清晰完整，不只认正式资源。</div></div></div><div class="pv-inf"><span class="pv-inf-num" style="background:#f59e0b">6</span><div class="pv-inf-main"><div class="pv-inf-head"><b>审美偏好泄露：欣赏 unconventional</b><span class="pv-pill" style="color:#f59e0b;border-color:#f59e0b66;background:#f59e0b12">中等推断</span></div><div class="pv-inf-body">赞美导师的六词清单（open-minded / creative / unconventional / modest / dedicated）实为自己的角色模范自白，与其后选择语言演化这一冷门长线主题一致。</div></div></div>
+<div class="pg-title">三、与后续行为 cross-check（互证，均来自本地语料）</div>
+<table class="pv-table"><thead><tr><th>推断</th><th>后续行为</th><th>一致性</th></tr></thead><tbody><tr><td>水平化互惠</td><td>大量共同一作/共同通讯（J10 PNAS 2024、J16 PsychRev in press）</td><td><span class="pv-cons hi">高</span></td></tr><tr><td>欣赏 unconventional</td><td>语言演化冷门长线（J1、J10、J13 PNAS 2026）</td><td><span class="pv-cons hi">高</span></td></tr><tr><td>安全基地（支持+自由）</td><td>博士→博后→心理所无缝衔接，跨机构长关系（Hertwig 线延续 3 年）</td><td><span class="pv-cons hi">高</span></td></tr><tr><td>家庭优先</td><td>2022 年回国（推测性解释，数据无法证实）</td><td><span class="pv-cons lo">弱一致</span></td></tr></tbody></table>
+<div class="pv-warn"><div class="pv-warn-t">⚠️ 解读限制</div><ul><li>致谢是体裁化文本，受社会期许影响；情感强度受书写规范调节。</li><li>单页样本反映 2019 年书写状态，不可外推至当下。</li><li>笔误（"advises"、"founded by"）只说明赶工，不能反推做事不严谨。</li><li>未提伴侣 = 无信息，不推断其婚恋/家庭结构。</li></ul></div>
+<div class="pg-title">一句话画像</div>
+<div class="pv-hero">“家庭为锚、自主为需、情感与分析双通道、关系账户清晰且水平化——一个把"被支持+被放权"体验内化成研究风格（合作署名、冷门长线、跨机构长关系）的人。致谢和他后来 PNAS 论文上的署名结构，其实是同一种人格的两种书写。”</div>
+</div></div>
 
 <div id="profile"><div class="section"><h2>🗂 履历、导师与机构</h2>
 
 <div class="lineage">
-<div class="node"><div class="n-y">2009–2013</div><div class="n-t">新加坡管理大学 · 学士</div><div class="n-s">SMU</div></div>
+<div class="node" style="border-top:4px solid #94a3b8"><div class="n-ic">🏫</div><div class="n-y">2009–2013</div><div class="n-t">新加坡管理大学 · 学士</div><div class="n-s">SMU</div></div>
 <div class="arrow">→</div>
-<div class="node" style="border-color:#8b5cf6"><div class="n-y">2014–2019</div><div class="n-t">华威大学 · 硕士+博士</div><div class="n-s">导师 Thomas Hills · Leverhulme 资助</div></div>
+<div class="node" style="border-top:4px solid #8b5cf6"><div class="n-ic">🎓</div><div class="n-y">2014–2019</div><div class="n-t">华威大学 · 硕士+博士</div><div class="n-s">导师 Thomas Hills · Leverhulme 资助</div></div>
 <div class="arrow">→</div>
-<div class="node" style="border-color:#f59e0b"><div class="n-y">2019–2022</div><div class="n-t">马普人类发展所 · 博后</div><div class="n-s">CAR 中心 · 正式导师 Ralph Hertwig</div></div>
+<div class="node" style="border-top:4px solid #f59e0b"><div class="n-ic">🔬</div><div class="n-y">2019–2022</div><div class="n-t">马普人类发展所 · 博后</div><div class="n-s">CAR 中心 · 正式导师 Ralph Hertwig</div></div>
 <div class="arrow">→</div>
-<div class="node" style="border-color:#10b981"><div class="n-y">2022–今</div><div class="n-t">中科院心理所 · 副研究员</div><div class="n-s">滦盛华协作 + 马普双栖（2026 Partner Group 负责人）</div></div>
+<div class="node" style="border-top:4px solid #10b981"><div class="n-ic">🏛️</div><div class="n-y">2022–今</div><div class="n-t">中科院心理所 · 副研究员</div><div class="n-s">滦盛华协作 + 马普双栖（2026 Partner Group 负责人）</div></div>
 </div>
 
-<div class="md"><h2 class='mdt'>李赢（Ying Li）履历、导师与机构调研报告</h2>
-<p>生成: 2026-09-29 | 配套: papers_list.csv（32 条著录）/ pdfs/（29 个 PDF）/ coverage.md</p>
-<blockquote>源标注纪律：【官网】= 心理研究所官网；【个人页】= liyingpsych.github.io；【MPHD】= 马克斯·普朗克人类发展研究所主页；【ORCID】= ORCID 0000-0003-0678-9535；【WRAP】= 华威大学论文库；【其他】= 百科/论坛/招聘帖等二级来源。</blockquote>
-<hr>
-<h3>1. 基本信息</h3>
-<table><thead><tr><th>项</th><th>值</th><th>源</th></tr></thead><tbody>
-<tr><td>姓名</td><td>李赢 / Ying Li</td><td>【官网】【ORCID】</td></tr>
-<tr><td>性别</td><td>男</td><td>【其他】（UCAS 导师页、2025 青年论坛报告 PDF）</td></tr>
-<tr><td>现任职务</td><td>中国科学院心理研究所 社会与工程心理学研究室 副研究员（2022.09– ）</td><td>【官网】</td></tr>
-<tr><td>兼职</td><td>马普人类发展研究所（MPHD）访问研究员（2022.09– ）；MPHD Partner Group（马普伙伴组）负责人（2026– ）</td><td>【官网】【个人页】【MPHD】</td></tr>
-<tr><td>ORCID</td><td>0000-0003-0678-9535</td><td>【ORCID】</td></tr>
-<tr><td>邮箱</td><td>liying@psych.ac.cn；li@mpib-berlin.mpg.de；0420ying.li@gmail.com</td><td>【ORCID】</td></tr>
-<tr><td>个人主页</td><td><a href="https://liyingpsych.github.io/" target="_blank">https://liyingpsych.github.io/</a></td><td>【个人页】</td></tr>
-<tr><td>实验室</td><td>社会与工程心理学研究室（raum.psych.ac.cn，公网不可达）</td><td>【官网】</td></tr>
-<tr><td>导师身份</td><td>博士生导师 + 硕士生导师（招收 040201 基础心理学 / 0402Z2 认知神经科学）</td><td>【其他】UCAS 导师页</td></tr>
-<tr><td>人才计划</td><td>入选中科院"百千万人才工程"（简称"百人计划"）</td><td>【其他】招聘帖</td></tr>
-<tr><td>公众号</td><td>"识心观象"（科普/方法传播）</td><td>【其他】</td></tr>
-</tbody></table>
-<h3>2. 教育经历</h3>
-<table><thead><tr><th>时期</th><th>机构</th><th>学位</th><th>源</th></tr></thead><tbody>
-<tr><td>2009.09–2013.12</td><td>新加坡管理大学（SMU）</td><td>学士</td><td>【官网】</td></tr>
-<tr><td>2014.10–2015.10</td><td>华威大学（University of Warwick）</td><td>行为经济学硕士（MSc）</td><td>【官网】【MPHD】</td></tr>
-<tr><td>2016.01–2019.03</td><td>华威大学 心理学系</td><td>博士（PhD，2019.03 授予）</td><td>【官网】【WRAP】【ORCID】</td></tr>
-</tbody></table>
-<p><b>博士论文</b>（T1，已下载至 pdfs/）：</p>
-<ul><li>题名：<i>From words to mind: what can we learn about us from the language we produced?</i>（从言语到心智：我们能从自己产生的语言中了解自己什么？）</li><li>导师：<b>Thomas Hills</b>（华威大学心理学系）</li><li>资助：Leverhulme Trust</li><li>库：WRAP 152056，<a href="https://wrap.warwick.ac.uk/152056/" target="_blank">https://wrap.warwick.ac.uk/152056/</a> （15 MB PDF）</li><li>内容主线：Macroscope 大规模语料语义分析平台、Evolutionary Reputation Theory（ERT）、风险话语历史语料分析——即其此后全部语言演化研究的起点。</li></ul>
-<h3>3. 工作/研究经历时间线</h3>
-<table><thead><tr><th>时期</th><th>职位</th><th>机构</th><th>备注</th></tr></thead><tbody>
-<tr><td>2019.03–2022.09</td><td>博后</td><td>MPHD 柏林 · 适应理性中心（Centre for Adaptive Rationality, CAR）</td><td>挂靠 Ralph Hertwig 组；产出风险与疫情方向论文（J4、J8 等）</td></tr>
-<tr><td>2022.09– 至今</td><td>副研究员</td><td>中科院心理研究所 · 社会与工程心理学研究室</td><td>回国入职</td></tr>
-<tr><td>2022.09– 至今</td><td>访问研究员（兼任）</td><td>MPHD</td><td>保留马普 affiliation，SSM 等论文仍挂双单位</td></tr>
-<tr><td>2026– 至今</td><td>Partner Group 负责人</td><td>MPHD 伙伴组（心理所合作组）</td><td>2026 年启动，经费 80 万/2026–2031</td></tr>
-</tbody></table>
-<h3>4. 导师与学术谱系</h3>
-<ol><li><b>博士导师：Thomas Hills</b>（Tillmann Trenholm Hills）</li></ol>
-<ul><li>读博期间在华威大学，其后转入 MPHD；至今是其最密切的合作者与共同通讯。</li><li>合作产出贯穿全部关键节点：C1–C4（CogSci 2016–2018）、P1/J2（风险简史）、P8/J10（PNAS 2024 认知选择）、P10/J16（Psych Review in press）、C3 等。</li><li>研究谱系：<b>计算语言演化 + 语义变化</b>（Macroscope、ERT、cognitive selection）。</li></ul>
-<ol><li><b>博后阶段宿主组：Ralph Hertwig 组（MPHD · CAR）</b></li></ol>
-<ul><li>Hertwig 为风险与决策研究大家；该阶段产出风险感知、疫情情绪/预防行为、自杀遗书认知网络（J4、J8、J9、P6、P7）。</li></ul>
-<ol><li><b>心理所阶段主要合作者：滦盛华（Luan Shenghua）教授</b></li></ol>
-<ul><li>心理所决策理论与模型方向；多篇论文共同/对应作者（官网英文版列为 Professor, Decision theories and models）。</li></ul>
-<ol><li><b>其他关键合作者</b>（据 papers_list.csv 作者表）：</li></ol>
-<ul><li>Warwick 时期：Cynthia S. Q. Siew 等；</li><li>自杀遗书认知网络线：Massimo Stella（J9 一作）及自杀研究合作者；</li><li>Sci Rep 2024（J11）：Fritz Breithaupt 团队（李赢第 5 作者）。</li></ul>
-<blockquote>谱系一句话：SMU → 华威（Hills 门下，计算语言演化）→ 马普 CAR（Hertwig 门下，风险与决策）→ 心理所（滦盛华协作，四大主题整合 + 马普伙伴组双栖）。</blockquote>
-<h3>5. 研究方向（现）</h3>
-<p>据【官网】/【个人页】：</p>
-<ol><li><b>语言演化</b>——认知选择如何塑造语言变化（PNAS 2024 代表作；Psych Review in press 新文）</li><li><b>语言与认知</b>——Macroscope 平台、心理病理文本分析（自杀遗书/焦虑）</li><li><b>情绪与福祉</b></li><li><b>行为决策</b>——风险与决策、疫情行为、集体行动（PNAS 2026 Private Solution Trap）</li></ol>
-<p>工具资产：Macroscope（macroscope.tech）。</p>
-<h3>6. 主持项目</h3>
-<table><thead><tr><th>项目</th><th>时期</th><th>金额</th><th>源</th></tr></thead><tbody>
-<tr><td>中科院青年人才引进项目</td><td>2026–2029</td><td>300 万</td><td>【个人页】</td></tr>
-<tr><td>MPHD Partner Group（伙伴组）</td><td>2026–2031</td><td>80 万</td><td>【个人页】</td></tr>
-<tr><td>国家自然科学基金面上项目（32371127）</td><td>2024–2027</td><td>50 万</td><td>【官网】【个人页】</td></tr>
-<tr><td>心理所部署（BR 候选）项目（E2CX5235）</td><td>2022–2025/2028</td><td>75 万 / 100 万（两页表述不一，疑为同名项目的两期/改名）</td><td>【官网】（2022 页）/【个人页】</td></tr>
-</tbody></table>
-<p>合计（个人页口径，4 项）：<b>约 530 万</b>。另【其他】百科提及牵头"从语言到心智：定量语言分析对心理学研究的启示"（2022–2025），与 BR 候选项目可能同一事项。</p>
-<h3>7. 学生与招生</h3>
-<ul><li><b>沈张辰</b>（UCAS 应用心理硕士在读）：J12（PCHJ 2025）、P10（yzufb）、J16（Psych Rev in press）共同作者。</li><li><b>2027 级博士招生中</b>：040201 基础心理学 / 0402Z2 认知神经科学；联系 liying@psych.ac.cn，邮件主题格式"PhD Application_姓名_毕业院校"。【其他】招聘帖</li></ul>
-<h3>8. 代表作（官网列 1–8，摘录可见项）</h3>
-<ul><li>PNAS 2024 一作 + 共同通讯：Cognitive selection 与语言变化（J10）</li><li>PNAS 2026：Private Solution Trap（J13）</li><li>Psychological Review in press（2026）：<i>Older yet faster: Representational development explains accelerated semantic processing in older adults</i>（J16，Li, Y.<i>, Zhao, W. J.</i>, Luan, S.* 共同一作；P10 的期刊版）</li><li>完整 32 条著录见 papers_list.csv；全部可获取 PDF（29/29 有效）见 coverage.md。</li></ul>
-<h3>9. 同名排除</h3>
-<ul><li>"Ying Li"（中科院神经科学研究所、Harvard Dulac 组背景）——<b>另一人</b>（基金委页面），已排除。</li><li>J14（PRBM 2023）末作者 Ying Li（苏州城市学院）——<b>另一人</b>，已排除（详见 CSV J14 行注）。</li></ul>
-<h3>10. 主要来源清单</h3>
-<table><thead><tr><th>源</th><th>URL</th></tr></thead><tbody>
-<tr><td>心理研究所官网个人页</td><td><a href="https://www.psych.ac.cn/sourcedb/cn/expert/202209/t20220915_6512913.html" target="_blank">https://www.psych.ac.cn/sourcedb/cn/expert/202209/t20220915_6512913.html</a></td></tr>
-<tr><td>个人主页</td><td><a href="https://liyingpsych.github.io/" target="_blank">https://liyingpsych.github.io/</a></td></tr>
-<tr><td>MPHD 个人页</td><td><a href="https://www.mpib-berlin.mpg.de/person/98812/2433024" target="_blank">https://www.mpib-berlin.mpg.de/person/98812/2433024</a></td></tr>
-<tr><td>ORCID</td><td><a href="https://orcid.org/0000-0003-0678-9535" target="_blank">https://orcid.org/0000-0003-0678-9535</a></td></tr>
-<tr><td>WRAP 博士论文</td><td><a href="https://wrap.warwick.ac.uk/152056/" target="_blank">https://wrap.warwick.ac.uk/152056/</a></td></tr>
-<tr><td>UCAS 导师页</td><td><a href="https://people.ucas.ac.cn/~0076262" target="_blank">https://people.ucas.ac.cn/~0076262</a></td></tr>
-<tr><td>2025 第一届认知科学与心理健康青年论坛报告 PDF</td><td>见前期检索缓存（"认知选择塑造语言的演化方向"报告）</td></tr>
-<tr><td>博士/硕士招生帖（2026 发）</td><td>微信公众号转发（见前期检索缓存）</td></tr>
-<tr><td>百度百科</td><td>"李赢"词条（二级来源，仅作交叉印证）</td></tr>
-</tbody></table></div></div></div>
+
+<div class="pf-note">📎 源标注纪律：源标注纪律：【官网】= 心理研究所官网；【个人页】= liyingpsych.github.io；【MPHD】= 马克斯·普朗克人类发展研究所主页；【ORCID】= ORCID 0000-0003-0678-9535；【WRAP】= 华威大学论文库；【其他】= 百科/论坛/招聘帖等二级来源。</div>
+<div class="pg-title">📇 基本信息<span class="pg-count">11 项</span></div>
+<div class="pf-kv-grid"><div class="pf-kv"><div class="pf-k">姓名</div><div class="pf-v">李赢 / Ying Li</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span><span class="pf-src" style="color:#0ea5e9;border-color:#0ea5e955">ORCID</span></div></div><div class="pf-kv"><div class="pf-k">性别</div><div class="pf-v">男</div><div class="pf-srcs"><span class="pf-src" style="color:#94a3b8;border-color:#94a3b855">其他</span><span class="pf-src-note">UCAS 导师页、2025 青年论坛报告 PDF</span></div></div><div class="pf-kv"><div class="pf-k">现任职务</div><div class="pf-v">中国科学院心理研究所 社会与工程心理学研究室 副研究员（2022.09– ）</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span></div></div><div class="pf-kv"><div class="pf-k">兼职</div><div class="pf-v">马普人类发展研究所（MPHD）访问研究员（2022.09– ）；MPHD Partner Group（马普伙伴组）负责人（2026– ）</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span><span class="pf-src" style="color:#0d9488;border-color:#0d948855">个人页</span><span class="pf-src" style="color:#8b5cf6;border-color:#8b5cf655">MPHD</span></div></div><div class="pf-kv"><div class="pf-k">ORCID</div><div class="pf-v">0000-0003-0678-9535</div><div class="pf-srcs"><span class="pf-src" style="color:#0ea5e9;border-color:#0ea5e955">ORCID</span></div></div><div class="pf-kv"><div class="pf-k">邮箱</div><div class="pf-v">liying@psych.ac.cn；li@mpib-berlin.mpg.de；0420ying.li@gmail.com</div><div class="pf-srcs"><span class="pf-src" style="color:#0ea5e9;border-color:#0ea5e955">ORCID</span></div></div><div class="pf-kv"><div class="pf-k">个人主页</div><div class="pf-v"><a href="https://liyingpsych.github.io/" target="_blank">https://liyingpsych.github.io/</a></div><div class="pf-srcs"><span class="pf-src" style="color:#0d9488;border-color:#0d948855">个人页</span></div></div><div class="pf-kv"><div class="pf-k">实验室</div><div class="pf-v">社会与工程心理学研究室（raum.psych.ac.cn，公网不可达）</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span></div></div><div class="pf-kv"><div class="pf-k">导师身份</div><div class="pf-v">博士生导师 + 硕士生导师（招收 040201 基础心理学 / 0402Z2 认知神经科学）</div><div class="pf-srcs"><span class="pf-src" style="color:#94a3b8;border-color:#94a3b855">其他</span><span class="pf-src-note">UCAS 导师页</span></div></div><div class="pf-kv"><div class="pf-k">人才计划</div><div class="pf-v">入选中科院"百千万人才工程"（简称"百人计划"）</div><div class="pf-srcs"><span class="pf-src" style="color:#94a3b8;border-color:#94a3b855">其他</span><span class="pf-src-note">招聘帖</span></div></div><div class="pf-kv"><div class="pf-k">公众号</div><div class="pf-v">"识心观象"（科普/方法传播）</div><div class="pf-srcs"><span class="pf-src" style="color:#94a3b8;border-color:#94a3b855">其他</span></div></div></div>
+<div class="pg-title">🎓 教育经历</div>
+<div class="pf-edu-grid"><div class="pf-edu" style="border-top:3px solid #8b5cf6"><div class="pf-edu-cap">🏫</div><div class="pf-edu-inst">新加坡管理大学（SMU）</div><div class="pf-edu-deg">学士</div><div class="pf-edu-when">2009.09–2013.12</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span></div></div><div class="pf-edu" style="border-top:3px solid #f59e0b"><div class="pf-edu-cap">📜</div><div class="pf-edu-inst">华威大学（University of Warwick）</div><div class="pf-edu-deg">行为经济学硕士（MSc）</div><div class="pf-edu-when">2014.10–2015.10</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span><span class="pf-src" style="color:#8b5cf6;border-color:#8b5cf655">MPHD</span></div></div><div class="pf-edu" style="border-top:3px solid #10b981"><div class="pf-edu-cap">🎓</div><div class="pf-edu-inst">华威大学 心理学系</div><div class="pf-edu-deg">博士（PhD，2019.03 授予）</div><div class="pf-edu-when">2016.01–2019.03</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span><span class="pf-src" style="color:#6366f1;border-color:#6366f155">WRAP</span><span class="pf-src" style="color:#0ea5e9;border-color:#0ea5e955">ORCID</span></div></div></div>
+<div class="pf-thesis"><div class="pf-thesis-t">🎓 博士论文（T1，已下载至 pdfs/）</div><div class="md"><ul><li>题名：<i>From words to mind: what can we learn about us from the language we produced?</i>（从言语到心智：我们能从自己产生的语言中了解自己什么？）</li><li>导师：<b>Thomas Hills</b>（华威大学心理学系）</li><li>资助：Leverhulme Trust</li><li>库：WRAP 152056，<a href="https://wrap.warwick.ac.uk/152056/" target="_blank">https://wrap.warwick.ac.uk/152056/</a> （15 MB PDF）</li><li>内容主线：Macroscope 大规模语料语义分析平台、Evolutionary Reputation Theory（ERT）、风险话语历史语料分析——即其此后全部语言演化研究的起点。</li></ul></div></div>
+<div class="pg-title">🧳 工作/研究经历</div>
+<div class="pf-wt-wrap"><div class="pf-wt"><div class="pf-wt-dot" style="background:#f59e0b"></div><div class="pf-wt-main"><div class="pf-wt-pos">博后<span class="pf-wt-org">MPHD 柏林 · 适应理性中心（Centre for Adaptive Rationality, CAR）</span></div><div class="pf-wt-note">挂靠 Ralph Hertwig 组；产出风险与疫情方向论文（J4、J8 等）</div></div><div class="pf-wt-when">2019.03–2022.09</div></div><div class="pf-wt"><div class="pf-wt-dot" style="background:#10b981"></div><div class="pf-wt-main"><div class="pf-wt-pos">副研究员<span class="pf-wt-org">中科院心理研究所 · 社会与工程心理学研究室</span></div><div class="pf-wt-note">回国入职</div></div><div class="pf-wt-when">2022.09– 至今</div></div><div class="pf-wt"><div class="pf-wt-dot" style="background:#10b981"></div><div class="pf-wt-main"><div class="pf-wt-pos">访问研究员（兼任）<span class="pf-wt-org">MPHD</span></div><div class="pf-wt-note">保留马普 affiliation，SSM 等论文仍挂双单位</div></div><div class="pf-wt-when">2022.09– 至今</div></div><div class="pf-wt"><div class="pf-wt-dot" style="background:#10b981"></div><div class="pf-wt-main"><div class="pf-wt-pos">Partner Group 负责人<span class="pf-wt-org">MPHD 伙伴组（心理所合作组）</span></div><div class="pf-wt-note">2026 年启动，经费 80 万/2026–2031</div></div><div class="pf-wt-when">2026– 至今</div></div></div>
+<div class="pg-title">🌳 导师与学术谱系</div>
+<div class="pf-lin-grid"><div class="pf-lin" style="border-left:4px solid #8b5cf6"><span class="pf-lin-num" style="background:#8b5cf6">1</span><div class="pf-lin-main"><div class="pf-lin-name"><b>博士导师：Thomas Hills</b>（Tillmann Trenholm Hills）</div><ul class="pf-lin-sub"><li>读博期间在华威大学，其后转入 MPHD；至今是其最密切的合作者与共同通讯。</li><li>合作产出贯穿全部关键节点：C1–C4（CogSci 2016–2018）、P1/J2（风险简史）、P8/J10（PNAS 2024 认知选择）、P10/J16（Psych Review in press）、C3 等。</li><li>研究谱系：<b>计算语言演化 + 语义变化</b>（Macroscope、ERT、cognitive selection）。</li></ul></div></div><div class="pf-lin" style="border-left:4px solid #f59e0b"><span class="pf-lin-num" style="background:#f59e0b">2</span><div class="pf-lin-main"><div class="pf-lin-name"><b>博后阶段宿主组：Ralph Hertwig 组（MPHD · CAR）</b></div><ul class="pf-lin-sub"><li>Hertwig 为风险与决策研究大家；该阶段产出风险感知、疫情情绪/预防行为、自杀遗书认知网络（J4、J8、J9、P6、P7）。</li></ul></div></div><div class="pf-lin" style="border-left:4px solid #10b981"><span class="pf-lin-num" style="background:#10b981">3</span><div class="pf-lin-main"><div class="pf-lin-name"><b>心理所阶段主要合作者：滦盛华（Luan Shenghua）教授</b></div><ul class="pf-lin-sub"><li>心理所决策理论与模型方向；多篇论文共同/对应作者（官网英文版列为 Professor, Decision theories and models）。</li></ul></div></div><div class="pf-lin" style="border-left:4px solid #64748b"><span class="pf-lin-num" style="background:#64748b">4</span><div class="pf-lin-main"><div class="pf-lin-name"><b>其他关键合作者</b>（据 papers_list.csv 作者表）：</div><ul class="pf-lin-sub"><li>Warwick 时期：Cynthia S. Q. Siew 等；</li><li>自杀遗书认知网络线：Massimo Stella（J9 一作）及自杀研究合作者；</li><li>Sci Rep 2024（J11）：Fritz Breithaupt 团队（李赢第 5 作者）。</li></ul></div></div></div>
+<div class="tl-oneliner">谱系一句话：SMU → 华威（Hills 门下，计算语言演化）→ 马普 CAR（Hertwig 门下，风险与决策）→ 心理所（滦盛华协作，四大主题整合 + 马普伙伴组双栖）。</div>
+<div class="pg-title">🎯 研究方向（现，官网四主题）</div>
+<div class="pf-dir-grid"><div class="pf-dir" style="border-top:3px solid #2563eb"><div class="pf-dir-name">语言演化</div><div class="pf-dir-desc">认知选择如何塑造语言变化（PNAS 2024 代表作；Psych Review in press 新文）</div></div><div class="pf-dir" style="border-top:3px solid #f59e0b"><div class="pf-dir-name">语言与认知</div><div class="pf-dir-desc">Macroscope 平台、心理病理文本分析（自杀遗书/焦虑）</div></div><div class="pf-dir" style="border-top:3px solid #10b981"><div class="pf-dir-name">情绪与福祉</div></div><div class="pf-dir" style="border-top:3px solid #2563eb"><div class="pf-dir-name">行为决策</div><div class="pf-dir-desc">风险与决策、疫情行为、集体行动（PNAS 2026 Private Solution Trap）</div></div></div><div class="pf-tool">🧰 工具资产：Macroscope（macroscope.tech）。</div>
+<div class="pg-title">💰 主持项目</div>
+<div class="pf-pj-grid"><div class="pf-pj"><div class="pf-pj-name">中科院青年人才引进项目</div><div class="pf-pj-amt">300 万</div><div class="pf-pj-period">2026–2029</div><div class="pf-srcs"><span class="pf-src" style="color:#0d9488;border-color:#0d948855">个人页</span></div></div><div class="pf-pj"><div class="pf-pj-name">MPHD Partner Group（伙伴组）</div><div class="pf-pj-amt">80 万</div><div class="pf-pj-period">2026–2031</div><div class="pf-srcs"><span class="pf-src" style="color:#0d9488;border-color:#0d948855">个人页</span></div></div><div class="pf-pj"><div class="pf-pj-name">国家自然科学基金面上项目（32371127）</div><div class="pf-pj-amt">50 万</div><div class="pf-pj-period">2024–2027</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span><span class="pf-src" style="color:#0d9488;border-color:#0d948855">个人页</span></div></div><div class="pf-pj"><div class="pf-pj-name">心理所部署（BR 候选）项目（E2CX5235）</div><div class="pf-pj-amt">75 万 / 100 万（两页表述不一，疑为同名项目的两期/改名）</div><div class="pf-pj-period">2022–2025/2028</div><div class="pf-srcs"><span class="pf-src" style="color:#2563eb;border-color:#2563eb55">官网</span><span class="pf-src" style="color:#0d9488;border-color:#0d948855">个人页</span><span class="pf-src-note">2022 页）/</span></div></div></div>
+<div class="pf-pj-total">合计（个人页口径，4 项）：<b>约 530 万</b>。另【其他】百科提及牵头"从语言到心智：定量语言分析对心理学研究的启示"（2022–2025），与 BR 候选项目可能同一事项。</div>
+<div class="pg-title">👥 学生与招生</div>
+<div class="pf-b7-grid"><div class="pf-student">👨‍🎓 <b>沈张辰（UCAS 应用心理硕士在读）</b><div class="pf-student-d">J12（PCHJ 2025）、P10（yzufb）、J16（Psych Rev in press）共同作者。</div></div><div class="pv-recruit">🎓 <b>2027 级博士招生中</b><div class="pv-recruit-d">040201 基础心理学 / 0402Z2 认知神经科学；联系 liying@psych.ac.cn，邮件主题格式"PhD Application_姓名_毕业院校"。【其他】招聘帖</div></div></div>
+<div class="pf-works"><div class="pf-works-t">🏅 代表作（官网列 1–8，摘录可见项）</div><div class="md"><ul><li>PNAS 2024 一作 + 共同通讯：Cognitive selection 与语言变化（J10）</li><li>PNAS 2026：Private Solution Trap（J13）</li><li>Psychological Review in press（2026）：<i>Older yet faster: Representational development explains accelerated semantic processing in older adults</i>（J16，Li, Y.*, Zhao, W. J.*, Luan, S.* 共同一作；P10 的期刊版）</li><li>完整 32 条著录见 papers_list.csv；全部可获取 PDF（29/29 有效）见 coverage.md。</li></ul></div></div>
+<div class="pv-warn red"><div class="pv-warn-t">🚫 同名排除（非目标人物）</div><ul><li>"Ying Li"（中科院神经科学研究所、Harvard Dulac 组背景）——<b>另一人</b>（基金委页面），已排除。</li><li>J14（PRBM 2023）末作者 Ying Li（苏州城市学院）——<b>另一人</b>，已排除（详见 CSV J14 行注）。</li></ul></div>
+<div class="pf-src-box"><div class="pf-works-t">🔗 主要来源清单</div><div class="pf-src-row"><span class="pf-src-nm">心理研究所官网个人页</span><span class="pf-src-url"><a href="https://www.psych.ac.cn/sourcedb/cn/expert/202209/t20220915_6512913.html" target="_blank">https://www.psych.ac.cn/sourcedb/cn/expert/202209/t20220915_6512913.html</a></span></div><div class="pf-src-row"><span class="pf-src-nm">个人主页</span><span class="pf-src-url"><a href="https://liyingpsych.github.io/" target="_blank">https://liyingpsych.github.io/</a></span></div><div class="pf-src-row"><span class="pf-src-nm">MPHD 个人页</span><span class="pf-src-url"><a href="https://www.mpib-berlin.mpg.de/person/98812/2433024" target="_blank">https://www.mpib-berlin.mpg.de/person/98812/2433024</a></span></div><div class="pf-src-row"><span class="pf-src-nm">ORCID</span><span class="pf-src-url"><a href="https://orcid.org/0000-0003-0678-9535" target="_blank">https://orcid.org/0000-0003-0678-9535</a></span></div><div class="pf-src-row"><span class="pf-src-nm">WRAP 博士论文</span><span class="pf-src-url"><a href="https://wrap.warwick.ac.uk/152056/" target="_blank">https://wrap.warwick.ac.uk/152056/</a></span></div><div class="pf-src-row"><span class="pf-src-nm">UCAS 导师页</span><span class="pf-src-url"><a href="https://people.ucas.ac.cn/~0076262" target="_blank">https://people.ucas.ac.cn/~0076262</a></span></div><div class="pf-src-row"><span class="pf-src-nm">2025 第一届认知科学与心理健康青年论坛报告 PDF</span><span class="pf-src-url">见前期检索缓存（"认知选择塑造语言的演化方向"报告）</span></div><div class="pf-src-row"><span class="pf-src-nm">博士/硕士招生帖（2026 发）</span><span class="pf-src-url">微信公众号转发（见前期检索缓存）</span></div><div class="pf-src-row"><span class="pf-src-nm">百度百科</span><span class="pf-src-url">"李赢"词条（二级来源，仅作交叉印证）</span></div></div>
+</div></div>
 
 <div id="method"><div class="section"><h2>⚠️ 方法学说明与限制</h2><ul class="findings">
 <li>引文来自 OpenAlex 单快照（2026-09-29），未做跨库（WoS/Scopus）交叉；J16/T1/C1–C4 无 DOI 或无收录，引文按 0 处理。</li>
