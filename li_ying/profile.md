@@ -20,7 +20,7 @@
 | 实验室 | 社会与工程心理学研究室（raum.psych.ac.cn，公网不可达） | 【官网】 |
 | 导师身份 | 博士生导师 + 硕士生导师（招收 040201 基础心理学 / 0402Z2 认知神经科学） | 【其他】UCAS 导师页 |
 | 人才计划 | 入选中科院"百千万人才工程"（简称"百人计划"） | 【其他】招聘帖 |
-| 公众号 | "识心观象"（科普/方法传播） | 【其他】 |
+| 公众号/Blog | 公众号"识心观象"（个人未认证订阅号；官网个人页原文挂 1 篇直达链接）；个人网站 Blog 5 篇（2026-09-23 上线，GitHub 仓单 commit "Co-authored-by: Cursor" → 本人用 LLM 工具建站） | 【官网】【个人页】 |
 
 ## 2. 教育经历
 
@@ -107,6 +107,8 @@
 |---|---|
 | 心理研究所官网个人页 | https://www.psych.ac.cn/sourcedb/cn/expert/202209/t20220915_6512913.html |
 | 个人主页 | https://liyingpsych.github.io/ |
+| 个人主页 Blog（非学术写作 5 篇） | https://liyingpsych.github.io/blog.html |
+| 公众号"识心观象"代表作（官网挂的直达链接） | https://mp.weixin.qq.com/s/51yLqAKi3JfNDkfPxxCVeA |
 | MPHD 个人页 | https://www.mpib-berlin.mpg.de/person/98812/2433024 |
 | ORCID | https://orcid.org/0000-0003-0678-9535 |
 | WRAP 博士论文 | https://wrap.warwick.ac.uk/152056/ |
