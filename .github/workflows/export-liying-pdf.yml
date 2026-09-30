@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
+      - 'li_ying/report.html'
       - '.github/workflows/export-liying-pdf.yml'
 
 permissions:
@@ -33,14 +34,71 @@ jobs:
           @page { size: A4; margin: 10mm 9mm 12mm; }
           @media print {
             html, body { background: #fff !important; }
-            body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
-            .nav { display: none !important; }
-            .container { max-width: none !important; padding: 8px 0 !important; }
-            .header { padding: 28px 18px !important; }
-            .section, .stat-card, .insight, .pc, .tl-phase, .pv-ev, .pv-inf, .node,
-            table, pre, blockquote { break-inside: avoid-page; page-break-inside: avoid; }
-            h1, h2, h3, h4 { break-after: avoid-page; page-break-after: avoid; }
-            .pc:hover { transform: none !important; box-shadow: 0 1px 3px rgba(0,0,0,.05) !important; }
+            body {
+              font-family: "Noto Sans CJK SC", "PingFang SC", "Microsoft YaHei", sans-serif !important;
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
+            }
+
+            /* Web-only controls do not belong in the report. */
+            .nav, .filters { display: none !important; }
+            .container { max-width: none !important; padding: 6px 0 !important; }
+            .header { padding: 26px 18px !important; break-after: avoid-page; page-break-after: avoid; }
+
+            /* Major chapters start cleanly on a new page. */
+            #insights, #timeline, #papers, #plain, #persona, #profile, #method {
+              break-before: page;
+              page-break-before: always;
+            }
+
+            /* Do NOT lock whole chapters/tables to one page: that creates large blank areas. */
+            .section, .pg, .tl-phase, table {
+              break-inside: auto !important;
+              page-break-inside: auto !important;
+            }
+            .section {
+              box-shadow: none !important;
+              margin-bottom: 14px !important;
+            }
+            .tl-phase { overflow: visible !important; }
+
+            /* Keep small semantic units intact. */
+            .stats-grid, .row, .chart-box,
+            .stat-card, .insight, .pc, .pv-ev, .pv-inf, .node,
+            .tl-core, .tl-step, .tl-banner, .tl-oneliner, .tl-ev,
+            .pv-warn, .pv-hero, .pf-works, .pf-src-box,
+            pre, blockquote {
+              break-inside: avoid-page;
+              page-break-inside: avoid;
+            }
+
+            /* Keep headings with what follows. */
+            h1, h2, h3, h4,
+            .section > h2, .pg-title, .tl-phead, .tl-pmeta,
+            .pc-head, .pv-inf-head, .pf-works-t, .pv-ev-name {
+              break-after: avoid-page;
+              page-break-after: avoid;
+            }
+
+            /* Long tables may continue, but rows should not be torn in half. */
+            thead { display: table-header-group; }
+            tfoot { display: table-footer-group; }
+            tr, th, td {
+              break-inside: avoid-page;
+              page-break-inside: avoid;
+            }
+
+            /* Avoid orphaned single lines at page tops/bottoms. */
+            p, li { orphans: 3; widows: 3; }
+
+            /* Charts should stay compact and printable. */
+            .chart-box { height: 285px !important; }
+            canvas { max-width: 100% !important; }
+
+            .pc:hover {
+              transform: none !important;
+              box-shadow: 0 1px 3px rgba(0,0,0,.05) !important;
+            }
             a { text-decoration: none !important; }
           }
           </style>
