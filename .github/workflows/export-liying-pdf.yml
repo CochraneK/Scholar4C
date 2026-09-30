@@ -1,0 +1,86 @@
+name: Export Li Ying PDF
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/export-liying-pdf.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install CJK fonts and PDF tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-noto-cjk poppler-utils
+
+      - name: Prepare print HTML
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          src = Path('li_ying/report.html')
+          dst = Path('li_ying/report_print.html')
+          html = src.read_text(encoding='utf-8')
+          css = r'''
+          <style id="pdf-print-overrides">
+          @page { size: A4; margin: 10mm 9mm 12mm; }
+          @media print {
+            html, body { background: #fff !important; }
+            body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+            .nav { display: none !important; }
+            .container { max-width: none !important; padding: 8px 0 !important; }
+            .header { padding: 28px 18px !important; }
+            .section, .stat-card, .insight, .pc, .tl-phase, .pv-ev, .pv-inf, .node,
+            table, pre, blockquote { break-inside: avoid-page; page-break-inside: avoid; }
+            h1, h2, h3, h4 { break-after: avoid-page; page-break-after: avoid; }
+            .pc:hover { transform: none !important; box-shadow: 0 1px 3px rgba(0,0,0,.05) !important; }
+            a { text-decoration: none !important; }
+          }
+          </style>
+          '''
+          if '</head>' in html:
+              html = html.replace('</head>', css + '</head>', 1)
+          else:
+              html = css + html
+          dst.write_text(html, encoding='utf-8')
+          PY
+
+      - name: Render PDF with headless Chrome
+        run: |
+          python3 -m http.server 8000 >/tmp/scholar4c-http.log 2>&1 &
+          SERVER_PID=$!
+          trap 'kill $SERVER_PID || true' EXIT
+          sleep 2
+          CHROME="$(command -v google-chrome || command -v google-chrome-stable || command -v chromium || command -v chromium-browser)"
+          echo "Using browser: $CHROME"
+          "$CHROME" \
+            --headless=new \
+            --disable-gpu \
+            --no-sandbox \
+            --disable-dev-shm-usage \
+            --no-pdf-header-footer \
+            --virtual-time-budget=12000 \
+            --print-to-pdf="$(pwd)/li_ying/report.pdf" \
+            http://127.0.0.1:8000/li_ying/report_print.html
+          test -s li_ying/report.pdf
+          pdfinfo li_ying/report.pdf | sed -n '1,20p'
+          rm -f li_ying/report_print.html
+
+      - name: Commit generated PDF
+        run: |
+          if git diff --quiet -- li_ying/report.pdf && git ls-files --error-unmatch li_ying/report.pdf >/dev/null 2>&1; then
+            echo "PDF unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add li_ying/report.pdf
+          git commit -m "docs: export Li Ying report as PDF"
+          git push
