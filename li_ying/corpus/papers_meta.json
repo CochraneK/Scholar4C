@@ -1,0 +1,1449 @@
+{
+ "J1": {
+  "id": "J1",
+  "status": "ok",
+  "doi": "10.3758/s13428-018-1177-6",
+  "year": 2019,
+  "title": "The Macroscope: A tool for examining the historical structure of language",
+  "journal": "Behavior Research Methods",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Engelthaler",
+    "given": "Tomas"
+   },
+   {
+    "family": "Siew",
+    "given": "Cynthia S. Q."
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas T."
+   }
+  ],
+  "oa_pdf_links": [
+   "http://link.springer.com/content/pdf/10.3758/s13428-018-1177-6.pdf",
+   "http://link.springer.com/content/pdf/10.3758/s13428-018-1177-6.pdf"
+  ],
+  "ref": 25,
+  "links_all": [
+   "http://link.springer.com/content/pdf/10.3758/s13428-018-1177-6.pdf",
+   "http://link.springer.com/article/10.3758/s13428-018-1177-6/fulltext.html",
+   "http://link.springer.com/content/pdf/10.3758/s13428-018-1177-6.pdf"
+  ]
+ },
+ "J2": {
+  "id": "J2",
+  "status": "ok",
+  "doi": "10.1016/j.cognition.2020.104344",
+  "year": 2020,
+  "title": "A brief history of risk",
+  "journal": "Cognition",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   },
+   {
+    "family": "Hertwig",
+    "given": "Ralph"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 34,
+  "links_all": [
+   "https://api.elsevier.com/content/article/PII:S0010027720301633?httpAccept=text/xml",
+   "https://api.elsevier.com/content/article/PII:S0010027720301633?httpAccept=text/plain"
+  ]
+ },
+ "J3": {
+  "id": "J3",
+  "status": "ok",
+  "doi": "10.1037/xlm0000841",
+  "year": 2020,
+  "title": "The Emotional Recall Task: Juxtaposing recall and recognition-based affect scales.",
+  "journal": "Journal of Experimental Psychology: Learning, Memory, and Cognition",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Masitah",
+    "given": "Annasya"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas T."
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 18,
+  "links_all": [
+   "http://psycnet.apa.org/journals/xlm/46/9/1782.pdf"
+  ]
+ },
+ "J4": {
+  "id": "J4",
+  "status": "ok",
+  "doi": "10.1016/j.socscimed.2021.114222",
+  "year": 2021,
+  "title": "Changing emotions in the COVID-19 pandemic: A four-wave longitudinal study in the United States and China",
+  "journal": "Social Science &amp; Medicine",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Luan",
+    "given": "Shenghua"
+   },
+   {
+    "family": "Li",
+    "given": "Yugang"
+   },
+   {
+    "family": "Hertwig",
+    "given": "Ralph"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 65,
+  "links_all": [
+   "https://api.elsevier.com/content/article/PII:S0277953621005542?httpAccept=text/xml",
+   "https://api.elsevier.com/content/article/PII:S0277953621005542?httpAccept=text/plain"
+  ]
+ },
+ "J5": {
+  "id": "J5",
+  "status": "ok",
+  "doi": "10.1016/j.cognition.2021.104813",
+  "year": 2021,
+  "title": "Language patterns of outgroup prejudice",
+  "journal": "Cognition",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "T. Hills",
+    "given": "Thomas"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 7,
+  "links_all": [
+   "https://api.elsevier.com/content/article/PII:S0010027721002328?httpAccept=text/xml",
+   "https://api.elsevier.com/content/article/PII:S0010027721002328?httpAccept=text/plain"
+  ]
+ },
+ "J6": {
+  "id": "J6",
+  "status": "ok",
+  "doi": "10.3390/bdcc5040077",
+  "year": 2021,
+  "title": "DASentimental: Detecting Depression, Anxiety, and Stress in Texts via Emotional Recall, Cognitive Networks, and Machine Learning",
+  "journal": "Big Data and Cognitive Computing",
+  "authors": [
+   {
+    "family": "Fatima",
+    "given": "Asra"
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas Trenholm"
+   },
+   {
+    "family": "Stella",
+    "given": "Massimo"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 50,
+  "links_all": [
+   "https://www.mdpi.com/2504-2289/5/4/77/pdf"
+  ]
+ },
+ "J7": {
+  "id": "J7",
+  "status": "ok",
+  "doi": "10.3758/s13421-022-01331-0",
+  "year": 2022,
+  "title": "Diachronic semantic change in language is constrained by how people use and learn language",
+  "journal": "Memory &amp; Cognition",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Siew",
+    "given": "Cynthia S. Q."
+   }
+  ],
+  "oa_pdf_links": [
+   "https://link.springer.com/content/pdf/10.3758/s13421-022-01331-0.pdf",
+   "https://link.springer.com/content/pdf/10.3758/s13421-022-01331-0.pdf"
+  ],
+  "ref": 11,
+  "links_all": [
+   "https://link.springer.com/content/pdf/10.3758/s13421-022-01331-0.pdf",
+   "https://link.springer.com/article/10.3758/s13421-022-01331-0/fulltext.html",
+   "https://link.springer.com/content/pdf/10.3758/s13421-022-01331-0.pdf"
+  ]
+ },
+ "J8": {
+  "id": "J8",
+  "status": "ok",
+  "doi": "10.1037/amp0000885",
+  "year": 2022,
+  "title": "Does risk perception motivate preventive behavior during a pandemic? A longitudinal study in the United States and China.",
+  "journal": "American Psychologist",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Luan",
+    "given": "Shenghua"
+   },
+   {
+    "family": "Li",
+    "given": "Yugang"
+   },
+   {
+    "family": "Wu",
+    "given": "Junhui"
+   },
+   {
+    "family": "Li",
+    "given": "Wenqi"
+   },
+   {
+    "family": "Hertwig",
+    "given": "Ralph"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 25,
+  "links_all": [
+   "http://psycnet.apa.org/journals/amp/77/1/111.pdf"
+  ]
+ },
+ "J9": {
+  "id": "J9",
+  "status": "ok",
+  "doi": "10.3389/fpsyg.2022.917630",
+  "year": 2022,
+  "title": "Cognitive networks detect structural patterns and emotional complexity in suicide notes",
+  "journal": "Frontiers in Psychology",
+  "authors": [
+   {
+    "family": "Stella",
+    "given": "Massimo"
+   },
+   {
+    "family": "Swanson",
+    "given": "Trevor J."
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas T."
+   },
+   {
+    "family": "Teixeira",
+    "given": "Andreia S."
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 12,
+  "links_all": [
+   "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.917630/full"
+  ]
+ },
+ "J10": {
+  "id": "J10",
+  "status": "ok",
+  "doi": "10.1073/pnas.2220898120",
+  "year": 2023,
+  "title": "How cognitive selection affects language change",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Breithaupt",
+    "given": "Fritz"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   },
+   {
+    "family": "Lin",
+    "given": "Ziyong"
+   },
+   {
+    "family": "Chen",
+    "given": "Yanyan"
+   },
+   {
+    "family": "Siew",
+    "given": "Cynthia S. Q."
+   },
+   {
+    "family": "Hertwig",
+    "given": "Ralph"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 9,
+  "links_all": [
+   "https://pnas.org/doi/pdf/10.1073/pnas.2220898120"
+  ]
+ },
+ "J11": {
+  "id": "J11",
+  "status": "ok",
+  "doi": "10.1038/s41598-023-50229-7",
+  "year": 2024,
+  "title": "Humans create more novelty than ChatGPT when asked to retell a story",
+  "journal": "Scientific Reports",
+  "authors": [
+   {
+    "family": "Breithaupt",
+    "given": "Fritz"
+   },
+   {
+    "family": "Otenen",
+    "given": "Ege"
+   },
+   {
+    "family": "Wright",
+    "given": "Devin R."
+   },
+   {
+    "family": "Kruschke",
+    "given": "John K."
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Tan",
+    "given": "Yiyan"
+   }
+  ],
+  "oa_pdf_links": [
+   "https://www.nature.com/articles/s41598-023-50229-7.pdf",
+   "https://www.nature.com/articles/s41598-023-50229-7.pdf"
+  ],
+  "ref": 22,
+  "links_all": [
+   "https://www.nature.com/articles/s41598-023-50229-7.pdf",
+   "https://www.nature.com/articles/s41598-023-50229-7",
+   "https://www.nature.com/articles/s41598-023-50229-7.pdf"
+  ]
+ },
+ "J12": {
+  "id": "J12",
+  "status": "ok",
+  "doi": "10.1002/pchj.70051",
+  "year": 2025,
+  "title": "Enhancing the Cohesion and Influence of Minority Opinions Through Clustering: A Social Network Experiment",
+  "journal": "PsyCh Journal",
+  "authors": [
+   {
+    "family": "Wu",
+    "given": "Baizhou"
+   },
+   {
+    "family": "Liu",
+    "given": "Jun"
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Shen‐Zhang",
+    "given": "Chenran"
+   },
+   {
+    "family": "Luan",
+    "given": "Shenghua"
+   }
+  ],
+  "oa_pdf_links": [
+   "https://onlinelibrary.wiley.com/doi/pdf/10.1002/pchj.70051"
+  ],
+  "ref": 0,
+  "links_all": [
+   "https://onlinelibrary.wiley.com/doi/pdf/10.1002/pchj.70051",
+   "https://onlinelibrary.wiley.com/doi/full-xml/10.1002/pchj.70051",
+   "https://onlinelibrary.wiley.com/doi/pdf/10.1002/pchj.70051"
+  ]
+ },
+ "J13": {
+  "id": "J13",
+  "status": "ok",
+  "doi": "10.1073/pnas.2504632123",
+  "year": 2026,
+  "title": "The private solution trap in collective action problems across 34 nations",
+  "journal": "Proceedings of the National Academy of Sciences",
+  "authors": [
+   {
+    "family": "Malthouse",
+    "given": "Eugene"
+   },
+   {
+    "family": "Pilgrim",
+    "given": "Charlie"
+   },
+   {
+    "family": "Sgroi",
+    "given": "Daniel"
+   },
+   {
+    "family": "Accerenzi",
+    "given": "Michela"
+   },
+   {
+    "family": "Alfonso",
+    "given": "Antonio"
+   },
+   {
+    "family": "Ashraf",
+    "given": "Rana Umair"
+   },
+   {
+    "family": "Baard",
+    "given": "Max"
+   },
+   {
+    "family": "Banerjee",
+    "given": "Sanchayan"
+   },
+   {
+    "family": "Belianin",
+    "given": "Alexis"
+   },
+   {
+    "family": "Bhattacharjee",
+    "given": "Swagata"
+   },
+   {
+    "family": "Bhattacharya",
+    "given": "Mihir"
+   },
+   {
+    "family": "Brañas-Garza",
+    "given": "Pablo"
+   },
+   {
+    "family": "Cárdenas",
+    "given": "Juan-Camilo"
+   },
+   {
+    "family": "Carriquiry",
+    "given": "Miguel"
+   },
+   {
+    "family": "Choi",
+    "given": "Syngjoo"
+   },
+   {
+    "family": "Clochard",
+    "given": "Gwen-Jiro"
+   },
+   {
+    "family": "Denzon",
+    "given": "Eduardo Ezekiel"
+   },
+   {
+    "family": "Dessoulavy-Sliwinski",
+    "given": "Bartlomiej"
+   },
+   {
+    "family": "Dini",
+    "given": "Giorgio"
+   },
+   {
+    "family": "Dong",
+    "given": "Lu"
+   },
+   {
+    "family": "Ertl",
+    "given": "Antal"
+   },
+   {
+    "family": "Exadaktylos",
+    "given": "Filippos"
+   },
+   {
+    "family": "Filiz-Ozbay",
+    "given": "Emel"
+   },
+   {
+    "family": "Flecke",
+    "given": "Sarah Lynn"
+   },
+   {
+    "family": "Galeotti",
+    "given": "Fabio"
+   },
+   {
+    "family": "Garcia-Muñoz",
+    "given": "Teresa"
+   },
+   {
+    "family": "Hanaki",
+    "given": "Nobuyuki"
+   },
+   {
+    "family": "Hollard",
+    "given": "Guillaume"
+   },
+   {
+    "family": "Horn",
+    "given": "Daniel"
+   },
+   {
+    "family": "Huang",
+    "given": "Lingbo"
+   },
+   {
+    "family": "İriş",
+    "given": "Doruk"
+   },
+   {
+    "family": "Kiss",
+    "given": "Hubert Janos"
+   },
+   {
+    "family": "Koch",
+    "given": "Juliane"
+   },
+   {
+    "family": "Kovářík",
+    "given": "Jaromír"
+   },
+   {
+    "family": "Kwarteng",
+    "given": "Osbert Kwabena Boadi"
+   },
+   {
+    "family": "Lange",
+    "given": "Andreas"
+   },
+   {
+    "family": "Leites",
+    "given": "Martin"
+   },
+   {
+    "family": "Leung",
+    "given": "Thomas Ho-Fung"
+   },
+   {
+    "family": "Lim",
+    "given": "Wooyoung"
+   },
+   {
+    "family": "Morren",
+    "given": "Meike"
+   },
+   {
+    "family": "Nockur",
+    "given": "Laila"
+   },
+   {
+    "family": "Okyere",
+    "given": "Charles Yaw"
+   },
+   {
+    "family": "Oudah",
+    "given": "Mayada"
+   },
+   {
+    "family": "Ozkes",
+    "given": "Ali I."
+   },
+   {
+    "family": "Page",
+    "given": "Lionel"
+   },
+   {
+    "family": "Park",
+    "given": "Junghyun"
+   },
+   {
+    "family": "Pfattheicher",
+    "given": "Stefan"
+   },
+   {
+    "family": "Proestakis",
+    "given": "Antonios"
+   },
+   {
+    "family": "Ramos",
+    "given": "Carlos"
+   },
+   {
+    "family": "Ramos-Sosa",
+    "given": "Mapi"
+   },
+   {
+    "family": "Ashraf",
+    "given": "Muhammad Saeed"
+   },
+   {
+    "family": "Sanjaya",
+    "given": "Muhammad Ryan"
+   },
+   {
+    "family": "Schwaiger",
+    "given": "Rene"
+   },
+   {
+    "family": "Sene",
+    "given": "Omar"
+   },
+   {
+    "family": "Song",
+    "given": "Fei"
+   },
+   {
+    "family": "Spycher",
+    "given": "Sarah"
+   },
+   {
+    "family": "Staněk",
+    "given": "Rostislav"
+   },
+   {
+    "family": "Tanchingco",
+    "given": "Norman"
+   },
+   {
+    "family": "Tavoni",
+    "given": "Alessandro"
+   },
+   {
+    "family": "te Velde",
+    "given": "Vera"
+   },
+   {
+    "family": "Vázquez-De Francisco",
+    "given": "María José"
+   },
+   {
+    "family": "Visser",
+    "given": "Martine"
+   },
+   {
+    "family": "Wang",
+    "given": "Joseph Tao-Yi"
+   },
+   {
+    "family": "Wang",
+    "given": "Willy"
+   },
+   {
+    "family": "Weng",
+    "given": "Wei-Chien"
+   },
+   {
+    "family": "Werner",
+    "given": "Katharina"
+   },
+   {
+    "family": "Wijayanti",
+    "given": "Amanda"
+   },
+   {
+    "family": "Winkler",
+    "given": "Ralph"
+   },
+   {
+    "family": "Wooders",
+    "given": "John"
+   },
+   {
+    "family": "Ying",
+    "given": "Li"
+   },
+   {
+    "family": "Zhen",
+    "given": "Wei"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 1,
+  "links_all": [
+   "https://pnas.org/doi/pdf/10.1073/pnas.2504632123"
+  ]
+ },
+ "J14": {
+  "id": "J14",
+  "status": "ok",
+  "doi": "10.2147/prbm.s434765",
+  "year": 2023,
+  "title": "Impact of Easing COVID-19 Restrictions on Fear of COVID-19 and Social Support Among Chinese Students: A Longitudinal Analysis",
+  "journal": "Psychology Research and Behavior Management",
+  "authors": [
+   {
+    "family": "Zhao",
+    "given": "Yang"
+   },
+   {
+    "family": "Wang",
+    "given": "Ruizhe"
+   },
+   {
+    "family": "Li",
+    "given": "Hebin"
+   },
+   {
+    "family": "Chen",
+    "given": "Chong"
+   },
+   {
+    "family": "Zhou",
+    "given": "Bowen"
+   },
+   {
+    "family": "Weng",
+    "given": "Xinying"
+   },
+   {
+    "family": "Hua",
+    "given": "Yidi"
+   },
+   {
+    "family": "Jia",
+    "given": "Yaqi"
+   },
+   {
+    "family": "Wu",
+    "given": "Yajun"
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   }
+  ],
+  "oa_pdf_links": [
+   "https://www.dovepress.com/getfile.php?fileID=94467",
+   "https://www.dovepress.com/getfile.php?fileID=94467"
+  ],
+  "ref": 3,
+  "links_all": [
+   "https://www.dovepress.com/getfile.php?fileID=94467",
+   "https://www.dovepress.com/getfile.php?fileID=94467"
+  ]
+ },
+ "P1": {
+  "id": "P1",
+  "status": "ok",
+  "doi": "10.31234/osf.io/8vqhm",
+  "year": 2018,
+  "title": "A Brief History of Risk",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   },
+   {
+    "family": "Hertwig",
+    "given": "Ralph"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 1,
+  "links_all": []
+ },
+ "P2": {
+  "id": "P2",
+  "status": "ok",
+  "doi": "10.31219/osf.io/r6tvh",
+  "year": 2020,
+  "title": "The Emotional Recall Task: Juxtaposing Recall and Recognition-Based Affect Scales",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Masitah",
+    "given": "Annasya"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 1,
+  "links_all": []
+ },
+ "P3": {
+  "id": "P3",
+  "status": "ok",
+  "doi": "10.31219/osf.io/9dfep",
+  "year": 2020,
+  "title": "Changing Emotions in the COVID-19 Pandemic: A Four-Wave Longitudinal Study in the United States and China",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Luan",
+    "given": "Shenghua"
+   },
+   {
+    "family": "Hertwig",
+    "given": "Ralph"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 1,
+  "links_all": []
+ },
+ "P4": {
+  "id": "P4",
+  "status": "ok",
+  "doi": "10.31219/osf.io/zxhde",
+  "year": 2020,
+  "title": "Language of Outgroup Prejudice: Revealing Perceptions towards 60 U.S Immigrant Groups from Language Patterns",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 0,
+  "links_all": []
+ },
+ "P5": {
+  "id": "P5",
+  "status": "ok",
+  "doi": "10.31219/osf.io/x7ft3",
+  "year": 2020,
+  "title": "Diachronic semantic change in language influences, and is constrained by, how people use and learn language",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Siew",
+    "given": "Cynthia S. Q."
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 0,
+  "links_all": []
+ },
+ "P6": {
+  "id": "P6",
+  "status": "ok",
+  "doi": "10.31234/osf.io/8gvr2",
+  "year": 2021,
+  "title": "Cognitive networks identify dimensions of distress in suicide notes: Anxiety, emotional profiles, and \"words not said\"",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Swanson",
+    "given": "Trevor"
+   },
+   {
+    "family": "Teixeira",
+    "given": "Andreia Sofia"
+   },
+   {
+    "family": "Richson",
+    "given": "Brianne N."
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   },
+   {
+    "family": "Forbush",
+    "given": "Kelsie T."
+   },
+   {
+    "family": "Watson",
+    "given": "David"
+   },
+   {
+    "family": "Stella",
+    "given": "Massimo"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 2,
+  "links_all": []
+ },
+ "P7": {
+  "id": "P7",
+  "status": "ok",
+  "doi": "10.31234/osf.io/frvta",
+  "year": 2021,
+  "title": "Cognitive network science as a framework for detecting structural patterns and emotions in suicide letters",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Stella",
+    "given": "Massimo"
+   },
+   {
+    "family": "Swanson",
+    "given": "Trevor"
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   },
+   {
+    "family": "Teixeira",
+    "given": "Andreia Sofia"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 0,
+  "links_all": []
+ },
+ "P8": {
+  "id": "P8",
+  "status": "ok",
+  "doi": "10.31219/osf.io/tgeqm",
+  "year": 2022,
+  "title": "The Struggle for Life among Words: How Cognitive Selection Shape Language Evolution",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Breithaupt",
+    "given": "Fritz"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   },
+   {
+    "family": "Hertwig",
+    "given": "Ralph"
+   },
+   {
+    "family": "Siew",
+    "given": "Cynthia S. Q."
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 1,
+  "links_all": []
+ },
+ "P9": {
+  "id": "P9",
+  "status": "ok",
+  "doi": "10.31234/osf.io/m2k67",
+  "year": 2023,
+  "title": "Cognitive networks and text analysis identify anxiety as a key dimension of psychological distress in suicide notes",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Swanson",
+    "given": "Trevor"
+   },
+   {
+    "family": "Teixeira",
+    "given": "Andreia Sofia"
+   },
+   {
+    "family": "Richson",
+    "given": "Brianne N."
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   },
+   {
+    "family": "Forbush",
+    "given": "Kelsie T."
+   },
+   {
+    "family": "Watson",
+    "given": "David"
+   },
+   {
+    "family": "Ciringione",
+    "given": "Luciana"
+   },
+   {
+    "family": "Stella",
+    "given": "Massimo"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 1,
+  "links_all": []
+ },
+ "P10": {
+  "id": "P10",
+  "status": "ok",
+  "doi": "10.31234/osf.io/yzufb_v1",
+  "year": 2025,
+  "title": "Older yet Faster: Representational Development Explains Accelerated Semantic Processing in Older Adults",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Zhao",
+    "given": "Wenjia Joyce"
+   },
+   {
+    "family": "Luan",
+    "given": "Shenghua"
+   },
+   {
+    "family": "Lin",
+    "given": "Ziyong"
+   },
+   {
+    "family": "Fang",
+    "given": "Jun"
+   },
+   {
+    "family": "Shengzhang",
+    "given": "Chenran"
+   },
+   {
+    "family": "Chen",
+    "given": "Mingyi"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 0,
+  "links_all": []
+ },
+ "P11": {
+  "id": "P11",
+  "status": "ok",
+  "doi": "10.21203/rs.3.rs-4924647/v1",
+  "year": 2024,
+  "title": "Assessing private solutions to collective action problems in a 34-nation study",
+  "journal": "?",
+  "authors": [
+   {
+    "family": "Malthouse",
+    "given": "Eugene"
+   },
+   {
+    "family": "Pilgrim",
+    "given": "Charlie"
+   },
+   {
+    "family": "Sgroi",
+    "given": "Daniel"
+   },
+   {
+    "family": "Accerenzi",
+    "given": "Michela"
+   },
+   {
+    "family": "Alfonso",
+    "given": "Antonio"
+   },
+   {
+    "family": "Ashraf",
+    "given": "Rana Umair"
+   },
+   {
+    "family": "Baard",
+    "given": "Max"
+   },
+   {
+    "family": "Banerjee",
+    "given": "Sanchayan"
+   },
+   {
+    "family": "Belianin",
+    "given": "Alexis"
+   },
+   {
+    "family": "Bhattacharjee",
+    "given": "Swagata"
+   },
+   {
+    "family": "Bhattacharya",
+    "given": "Mihir"
+   },
+   {
+    "family": "Branas-Garza",
+    "given": "Pablo"
+   },
+   {
+    "family": "Cardenas",
+    "given": "Juan-Camilo"
+   },
+   {
+    "family": "Carriquiry",
+    "given": "Miguel"
+   },
+   {
+    "family": "Choi",
+    "given": "Syngjoo"
+   },
+   {
+    "family": "Clochard",
+    "given": "Gwen-Jiro"
+   },
+   {
+    "family": "Denzon",
+    "given": "Eduardo Ezekiel"
+   },
+   {
+    "family": "Dessoulavy-Sliwinski",
+    "given": "Bartlomiej"
+   },
+   {
+    "family": "Dini",
+    "given": "Giorgio"
+   },
+   {
+    "family": "Dong",
+    "given": "Lu"
+   },
+   {
+    "family": "Ertl",
+    "given": "Antal"
+   },
+   {
+    "family": "Exadaktylos",
+    "given": "Filippos"
+   },
+   {
+    "family": "Filiz-Ozbay",
+    "given": "Emel"
+   },
+   {
+    "family": "Flecke",
+    "given": "Sarah"
+   },
+   {
+    "family": "Galeotti",
+    "given": "Fabio"
+   },
+   {
+    "family": "Garcia",
+    "given": "Teresa"
+   },
+   {
+    "family": "Hanaki",
+    "given": "Nobuyuki"
+   },
+   {
+    "family": "Hollard",
+    "given": "University of Warwick"
+   },
+   {
+    "family": "Horn",
+    "given": "Daniel"
+   },
+   {
+    "family": "Huang",
+    "given": "Lingbo"
+   },
+   {
+    "family": "İriş",
+    "given": "Doruk"
+   },
+   {
+    "family": "Kiss",
+    "given": "Hubert Janos"
+   },
+   {
+    "family": "Koch",
+    "given": "Juliane"
+   },
+   {
+    "family": "Kovářík",
+    "given": "Jaromír"
+   },
+   {
+    "family": "Kwarteng",
+    "given": "Osbert"
+   },
+   {
+    "family": "Lange",
+    "given": "Andreas"
+   },
+   {
+    "family": "Leites",
+    "given": "Martin"
+   },
+   {
+    "family": "Leung",
+    "given": "Ho-Fung"
+   },
+   {
+    "family": "Lim",
+    "given": "Wooyoung"
+   },
+   {
+    "family": "Morren",
+    "given": "Meike"
+   },
+   {
+    "family": "Nockur",
+    "given": "Laila"
+   },
+   {
+    "family": "Okyere",
+    "given": "Charles"
+   },
+   {
+    "family": "Oudah",
+    "given": "Mayada"
+   },
+   {
+    "family": "Ozkes",
+    "given": "Ali"
+   },
+   {
+    "family": "Page",
+    "given": "Lionel"
+   },
+   {
+    "family": "Park",
+    "given": "Junghyun"
+   },
+   {
+    "family": "Pfattheicher",
+    "given": "Stefan"
+   },
+   {
+    "family": "Proestakis",
+    "given": "Antonios"
+   },
+   {
+    "family": "Ramos",
+    "given": "Carlos"
+   },
+   {
+    "family": "Ramos-Sosa",
+    "given": "Mapi"
+   },
+   {
+    "family": "Ashraf",
+    "given": "Muhammad Saeed"
+   },
+   {
+    "family": "Sanjaya",
+    "given": "Muhammad Ryan"
+   },
+   {
+    "family": "Schwaiger",
+    "given": "Rene"
+   },
+   {
+    "family": "Sene",
+    "given": "Omar"
+   },
+   {
+    "family": "Song",
+    "given": "Fei"
+   },
+   {
+    "family": "Spycher",
+    "given": "Sarah"
+   },
+   {
+    "family": "Staněk",
+    "given": "Rostislav"
+   },
+   {
+    "family": "Tanchingco",
+    "given": "Norman"
+   },
+   {
+    "family": "Tavoni",
+    "given": "Alessandro"
+   },
+   {
+    "family": "Velde",
+    "given": "Vera te"
+   },
+   {
+    "family": "Francisco",
+    "given": "María José Vázquez-De"
+   },
+   {
+    "family": "Visser",
+    "given": "Martine"
+   },
+   {
+    "family": "Wang",
+    "given": "Joseph Tao-yi"
+   },
+   {
+    "family": "Wang",
+    "given": "Willy"
+   },
+   {
+    "family": "Weng",
+    "given": "Wei-Chien"
+   },
+   {
+    "family": "Werner",
+    "given": "Katharina"
+   },
+   {
+    "family": "Wijayanti",
+    "given": "Amanda"
+   },
+   {
+    "family": "Winkler",
+    "given": "Ralph"
+   },
+   {
+    "family": "Wooders",
+    "given": "John"
+   },
+   {
+    "family": "Ying",
+    "given": "Li"
+   },
+   {
+    "family": "Zhen",
+    "given": "Wei"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   }
+  ],
+  "oa_pdf_links": [],
+  "ref": 0,
+  "links_all": [
+   "https://www.researchsquare.com/article/rs-4924647/v1",
+   "https://www.researchsquare.com/article/rs-4924647/v1.html"
+  ]
+ },
+ "C1": {
+  "id": "C1",
+  "status": "no_doi",
+  "doi": ""
+ },
+ "J15": {
+  "id": "J15",
+  "status": "ok",
+  "doi": "10.3390/bdcc9070171",
+  "year": 2025,
+  "title": "Cognitive Networks and Text Analysis Identify Anxiety as a Key Dimension of Distress in Genuine Suicide Notes",
+  "journal": "Big Data and Cognitive Computing",
+  "authors": [
+   {
+    "family": "Stella",
+    "given": "Massimo"
+   },
+   {
+    "family": "Swanson",
+    "given": "Trevor"
+   },
+   {
+    "family": "Teixeira",
+    "given": "Andreia Sofia"
+   },
+   {
+    "family": "Richson",
+    "given": "Brianne N."
+   },
+   {
+    "family": "Li",
+    "given": "Ying"
+   },
+   {
+    "family": "Hills",
+    "given": "Thomas"
+   },
+   {
+    "family": "Forbush",
+    "given": "Kelsie T."
+   },
+   {
+    "family": "Watson",
+    "given": "David"
+   }
+  ],
+  "links_all": [
+   "https://www.mdpi.com/2504-2289/9/7/171/pdf"
+  ],
+  "oa_pdf_links": [
+   "https://www.mdpi.com/2504-2289/9/7/171/pdf"
+  ]
+ }
+}
